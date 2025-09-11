@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termo de Uso e Consentimento - Consulta Popular</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Material Symbols Outlined -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1a202c; /* Cor de texto padrão */
+        }
+        .text-blue-600 { color: #2563eb; } /* Azul institucional */
+        .bg-blue-600 { background-color: #2563eb; }
+        .bg-blue-700 { background-color: #1d4ed8; }
+        .bg-blue-100 { background-color: #dbeafe; }
+        .hover\:bg-blue-700:hover { background-color: #1d4ed8; }
+        .a4-container {
+            max-width: 800px;
+            min-height: 1123px; /* Proporção A4 aproximada */
+            background-color: #fff;
+            padding: 3rem 2rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        @media (max-width: 820px) {
+            .a4-container {
+                min-height: auto;
+                padding: 2rem 1rem;
+            }
+        }
+        /* Estilos do novo cabeçalho */
+        header {
+            background-color: #2563eb;
+            color: #e3e3e3;
+            padding: 1rem 0;
+            font-family: 'Inter', sans-serif;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .header-wrapper {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+        }
+        .logo a img {
+            max-width: 260px;
+        }
+        .material-symbols-outlined {
+            display: none;
+            cursor: pointer;
+        }
+        nav#itens ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+            align-items: center;
+        }
+        nav#itens a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+            white-space: nowrap; /* Impede a quebra de linha dos links */
+        }
+        nav#itens a:hover {
+            color: #d1d5db;
+        }
+        .btn-opine {
+            background-color: white;
+            color: #2563eb;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-weight: bold;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .btn-opine:hover {
+            background-color: #f3f4f6;
+        }
+        @media (max-width: 768px) {
+            .material-symbols-outlined {
+                display: block;
+            }
+            nav#itens {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: #2563eb;
+                padding: 1rem 0;
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            }
+            nav#itens.show {
+                display: block;
+            }
+            nav#itens ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+<!-- Header -->
+<header>
+    <div class="header-wrapper">
+        <div class="logo">
+            <a href="/index.html"><img src="imagens/logo-prefeitura.png" alt="Prefeitura de Rio Branco"></a>
+        </div>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <nav id="itens">
+            <ul>
+                <li><a href="/index.html">Início</a></li>
+                <li><a href="/index.html#sobre">O que é o PLOA?</a></li>
+                <li><a href="/index.html#participar">Participação</a></li>
+                <li><a href="/index.html#faq">Dúvidas Frequentes</a></li>
+                <li><a href="https://www.riobranco.ac.gov.br/" target="_blank">Prefeitura</a></li>
+                <li><a class="btn-opine" style="color: #1d4ed8;" href="/voto.html">Dê Sua Sugestão</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- FIM DO CABEÇALHO -->
+
+<!-- Main Content -->
+<main class="flex justify-center py-8 px-4 md:px-0">
+    <div class="a4-container">
+        <div class="text-container">
+            <h1 class="text-3xl font-bold text-blue-600 text-center mb-6">Termo e Condições</h1>
+            <h2 class="text-2xl font-semibold mb-4">Termo de Uso e Consentimento para Coleta de Dados Pessoais</h2>
+            
+            <div class="space-y-6 text-gray-700">
+                <div class="section">
+                    <h3 class="text-xl font-bold mb-2">1. Introdução</h3>
+                    <p>Este documento tem como objetivo informar os usuários sobre a coleta, uso e proteção dos dados pessoais fornecidos, incluindo nome, e-mail e telefone. Ao fornecer seus dados, você concorda com os termos e condições aqui descritos.</p>
+                </div>
+                
+                <div class="section">
+                    <h3 class="text-xl font-bold mb-2">2. Coleta de Dados</h3>
+                    <p>Os seguintes dados pessoais serão coletados de forma opcional, ficando a critério do usuário informá-los ou não:</p>
+                    <ul class="list-disc list-inside ml-4 mt-2 space-y-1">
+                        <li>Nome</li>
+                        <li>E-mail</li>
+                        <li>Telefone</li>
+                        <li>Município de residência</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h3 class="text-xl font-bold mb-2">3. Finalidade da Coleta de Dados</h3>
+                    <p>Os dados coletados serão utilizados para as seguintes finalidades:</p>
+                    <ul class="list-disc list-inside ml-4 mt-2 space-y-1">
+                        <li>Identificação do usuário</li>
+                        <li>Comunicação de informações relevantes relacionadas ao serviço</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h3 class="text-xl font-bold mb-2">4. Compartilhamento de Dados</h3>
+                    <p>Seus dados pessoais não serão compartilhados com terceiros sem o seu consentimento, exceto quando exigido por lei.</p>
+                </div>
+                
+                <div class="section">
+                    <h3 class="text-xl font-bold mb-2">5. Segurança dos Dados</h3>
+                    <p>Implementamos medidas de segurança apropriadas para proteger seus dados pessoais contra acesso não autorizado, alteração, divulgação ou destruição.</p>
+                </div>
+                
+                <div class="section">
+                    <h3 class="text-xl font-bold mb-2">6. Direitos do Usuário</h3>
+                    <p>Você tem o direito de:</p>
+                    <ul class="list-disc list-inside ml-4 mt-2 space-y-1">
+                        <li>Acessar seus dados pessoais</li>
+                        <li>Corrigir dados incompletos, inexatos ou desatualizados</li>
+                        <li>Solicitar a exclusão de seus dados pessoais</li>
+                    </ul>
+                    <p class="mt-2">Para exercer seus direitos, entre em contato conosco através do e-mail <a href="mailto:consultapopular@ac.gov.br" class="text-blue-600 hover:underline">consultapopular@ac.gov.br</a>.</p>
+                </div>
+                
+                <div class="section">
+                    <h3 class="text-xl font-bold mb-2">7. Alterações no Termo de Uso</h3>
+                    <p>Este termo de uso pode ser atualizado, caso necessário. Qualquer alteração será comunicada através do nosso site ou por e-mail.</p>
+                </div>
+                
+                <div class="section">
+                    <h3 class="text-xl font-bold mb-2">8. Consentimento</h3>
+                    <p>Ao fornecer seus dados pessoais, você declara ter lido e concordado com os termos e condições aqui apresentados.</p>
+                    <p class="mt-4">Se você tiver dúvidas ou preocupações sobre este termo de uso, entre em contato conosco.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-white rounded-lg shadow-sm m-4">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <a href="#" class="flex items-center mb-4 sm:mb-0">
+                <img src="imagens/logo-prefeitura.png" class="h-10 me-3" alt="Logo Prefeitura de Rio Branco" />
+            </a>
+            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0">
+                <li>
+                    <a href="/termo.html" class="hover:underline me-4 md:me-6">Termo de uso da plataforma</a>
+                </li>
+                <li>
+                    <a href="/voto.html" class="hover:underline me-4 md:me-6">Sugestões</a>
+                </li>
+                <li>
+                    <a href="index.html" class="hover:underline">Início</a>
+                </li>
+            </ul>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <span class="block text-sm text-gray-500 sm:text-center">© 2025 Secretaria de Planejamento do Município de Rio Branco. Todos os direitos reservados.</span>
+    </div>
+</footer>
+
+<script>
+    // Script para o novo menu mobile
+    const burguer = document.getElementById('burguer');
+    const navItens = document.getElementById('itens');
+    
+    function clickMenu() {
+        if (navItens.classList.contains('show')) {
+            navItens.classList.remove('show');
+        } else {
+            navItens.classList.add('show');
+        }
+    }
+</script>
+
+</body>
+</html>
