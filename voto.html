@@ -1633,10 +1633,14 @@
                 const userCredential = await signInWithCustomToken(auth, initialAuthToken);
                 userId = userCredential.user.uid;
             } else {
+                // 🔑 Sempre tenta logar anonimamente
                 const userCredential = await signInAnonymously(auth);
                 userId = userCredential.user.uid;
             }
             console.log("✅ Autenticado como:", userId);
+
+            // habilita o botão enviar só depois da autenticação
+            submitBtn.disabled = false; 
         } catch (error) {
             console.error("❌ Erro na autenticação:", error);
         }
@@ -1661,6 +1665,7 @@
     const rioBrancoRadio = document.getElementsByName('rio-branco');
     const bairroField = document.getElementById('bairro-field');
     const submitBtn = document.getElementById('submit-button');
+    submitBtn.disabled = true; // desabilita até autenticar
     const multiPhaseForm = document.getElementById('multi-phase-form');
     const statusMessage = document.getElementById('status-message');
     const finalMessage = document.getElementById('final-message');
@@ -1687,15 +1692,26 @@
         }
     }
 
-    // Event Listeners for Navigation
     next1Btn.addEventListener('click', () => {
         const identifyChoice = document.querySelector('input[name="identify"]:checked').value;
         identified = (identifyChoice === 'sim');
-        previousPhase = 1; // Always go back to phase 1 from phase 2
+        previousPhase = 1;
+
+        // Se a pessoa quer se identificar...
         if (identified) {
+            // ...mostra a fase 2 e adiciona o 'required' nos campos.
             showPhase(2);
+            document.getElementById('name').setAttribute('required', true);
+            document.getElementById('sexo').setAttribute('required', true);
+            document.getElementById('escolaridade').setAttribute('required', true);
+            document.getElementById('faixa-etaria').setAttribute('required', true);
         } else {
+            // ...mostra a fase 3 e remove o 'required' para evitar o erro de validação.
             showPhase(3);
+            document.getElementById('name').removeAttribute('required');
+            document.getElementById('sexo').removeAttribute('required');
+            document.getElementById('escolaridade').removeAttribute('required');
+            document.getElementById('faixa-etaria').removeAttribute('required');
         }
     });
 
@@ -1763,11 +1779,10 @@
     // Form Submission
     multiPhaseForm.addEventListener('submit', async (e) => {
         e.preventDefault();
-
         
         if (!userId) {
-        alert("Aguarde, conectando ao servidor...");
-        return;
+            alert("Aguarde, conectando ao servidor...");
+            return;
         }
 
         if (Object.keys(firebaseConfig).length === 0) {
@@ -1781,21 +1796,25 @@
         submitBtn.textContent = 'Enviando...';
         statusMessage.classList.add('hidden');
 
-        // Collect personal info
-        let personalInfo = {};
-        if (identified) {
-            isRioBranco = document.querySelector('input[name="rio-branco"]:checked').value === 'sim';
-            personalInfo = {
-                name: document.getElementById('name').value,
-                sexo: document.getElementById('sexo').value,
-                escolaridade: document.getElementById('escolaridade').value,
-                faixaEtaria: document.getElementById('faixa-etaria').value,
-                isRioBranco: isRioBranco,
-            };
-            if (isRioBranco) {
-                personalInfo.bairro = document.getElementById('bairro').value;
-            }
+    // Coleta de dados pessoais
+    let personalInfo = {
+        identificado: identified ? "sim" : "nao"
+    };
+
+    if (identified) {
+        isRioBranco = document.querySelector('input[name="rio-branco"]:checked').value === 'sim';
+        personalInfo = {
+            ...personalInfo,
+            nome: document.getElementById('name').value,
+            sexo: document.getElementById('sexo').value,
+            escolaridade: document.getElementById('escolaridade').value,
+            faixaEtaria: document.getElementById('faixa-etaria').value,
+            moraRioBranco: isRioBranco,
+        };
+        if (isRioBranco) {
+            personalInfo.bairro = document.getElementById('bairro').value;
         }
+    }
 
         // Collect votes
         const votes = {};
@@ -1805,14 +1824,15 @@
         if (eixo1Votes.length > 0) votes.eixo1 = eixo1Votes;
         if (eixo2Votes.length > 0) votes.eixo2 = eixo2Votes;
 
-        // Create the final data object
+        // Cria objeto final
         const finalData = {
             userId: userId,
             timestamp: Timestamp.now(),
-            identified: identified,
-            personalInfo: identified ? personalInfo : {},
+            identificado: identified ? "sim" : "nao",
             votes: votes,
+            ...personalInfo // se não identificado, só vai { identificado: "nao" }
         };
+
 
         try {
             const suggestionsCollectionRef = collection(db, `artifacts/${appId}/public/data/suggestions`);
