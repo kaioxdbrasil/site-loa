@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="imagens/favconrbo.png">
     <title>Consulta Popular - Orçamento 2026 Rio Branco</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -114,17 +115,17 @@
 <header>
     <div class="header-wrapper">
         <div class="logo">
-            <a href="/index.html"><img src="imagens/logo-prefeitura.png" alt="Prefeitura de Rio Branco"></a>
+            <a href="/loa"><img src="imagens/logo-prefeitura.png" alt="Prefeitura de Rio Branco"></a>
         </div>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         <nav id="itens">
             <ul>
-                <li><a href="/index.html">Início</a></li>
-                <li><a href="/index.html#sobre">O que é o PLOA?</a></li>
-                <li><a href="/index.html#participar">Participação</a></li>
-                <li><a href="/index.html#faq">Dúvidas Frequentes</a></li>
+                <li><a href="/loa">Início</a></li>
+                <li><a href="/loa/#sobre">O que é o PLOA?</a></li>
+                <li><a href="/loa/#participar">Participação</a></li>
+                <li><a href="/loa/#faq">Dúvidas Frequentes</a></li>
                 <li><a href="https://www.riobranco.ac.gov.br/" target="_blank">Prefeitura</a></li>
-                <li><a class="btn-opine" style="color: #1d4ed8;" href="/site-loa/voto.html">Deixe sua sugestão</a></li>
+                <li><a class="btn-opine" style="color: #1d4ed8;" href="voto.html">Deixe sua sugestão</a></li>
             </ul>
         </nav>
     </div>
@@ -146,11 +147,11 @@
             <p class="max-w-2xl mb-6 font-light text-gray-700 lg:mb-8 md:text-lg lg:text-xl">
                 Sua opinião é fundamental para definirmos as prioridades do Orçamento Municipal para 2026
             </p>
-            <a href="/site-loa/voto.html" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300">
+            <a href="voto.html" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300">
                 Deixe sua sugestão
                 <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </a>
-            <a href="/site-loa#participar" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100">
+            <a href="/loa/#participar" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100">
                 Como participar
             </a>
         </div>
@@ -217,7 +218,7 @@
                 </div>
                 <h3 class="text-xl font-bold text-center mb-2">Segunda Fase</h3>
                 <p class="text-gray-600 text-center">
-                    É o momento da participação popular! A população é convidada a apresentar suas propostas e prioridades para o orçamento através da consulta pública online.
+                    A população é convidada a apresentar suas propostas e prioridades para o orçamento através da consulta pública online.
                 </p>
             </div>
             <!-- Card Fase 3 -->
@@ -229,7 +230,7 @@
                 </div>
                 <h3 class="text-xl font-bold text-center mb-2">Terceira Fase</h3>
                 <p class="text-gray-600 text-center">
-                    As propostas validadas e o projeto de lei final são enviados para a Câmara Municipal, onde são discutidos, emendados e votados para se tornarem a lei orçamentária do próximo ano.
+                    É enviado para a Câmara Municipal, onde será discutido, emendado e votado para se tornarem a lei orçamentária do próximo ano.
                 </p>
             </div>
         </div>
@@ -309,58 +310,7 @@
         <!-- FAQ Item 6 -->
         <div class="bg-white rounded-xl shadow-lg mb-4">
             <button class="faq-toggle w-full flex items-center justify-between p-6 cursor-pointer focus:outline-none">
-                <span class="text-lg font-semibold text-gray-800">6. Quando a LOA chega na Câmara?</span>
-                <span class="faq-icon text-blue-600 text-3xl font-bold transition-transform duration-300 transform rotate-0">+</span>
-            </button>
-            <div class="faq-answer px-6">
-                <p class="text-gray-600 pb-6">
-                    Conforme a Lei Orgânica do Município (LOM), o projeto de lei do orçamento anual deve ser encaminhado à Câmara Municipal até o dia 31 de outubro de cada exercício financeiro. Após sua votação, e com os ajustes feitos pelos vereadores, o texto é devolvido para sanção do prefeito até o dia 20 de dezembro, data que marca o encerramento da sessão legislativa.
-                </p>
-            </div>
-        </div>
-
-        <!-- FAQ Item 7 -->
-        <div class="bg-white rounded-xl shadow-lg mb-4">
-            <button class="faq-toggle w-full flex items-center justify-between p-6 cursor-pointer focus:outline-none">
-                <span class="text-lg font-semibold text-gray-800">7. Como é apresentado o resultado da consulta pública?</span>
-                <span class="faq-icon text-blue-600 text-3xl font-bold transition-transform duration-300 transform rotate-0">+</span>
-            </button>
-            <div class="faq-answer px-6">
-                <p class="text-gray-600 pb-6">
-                    Os resultados serão apresentados por meio da página da consulta virtual loa..rio branco.ac.gov.br, após análise técnica da equipe da Secretaria Municipal de Planejamento e Finanças.
-                </p>
-            </div>
-        </div>
-
-        <!-- FAQ Item 8 -->
-        <div class="bg-white rounded-xl shadow-lg mb-4">
-            <button class="faq-toggle w-full flex items-center justify-between p-6 cursor-pointer focus:outline-none">
-                <span class="text-lg font-semibold text-gray-800">8. Os vereadores podem apresentar emendas?</span>
-                <span class="faq-icon text-blue-600 text-3xl font-bold transition-transform duration-300 transform rotate-0">+</span>
-            </button>
-            <div class="faq-answer px-6">
-                <p class="text-gray-600 pb-6">
-                    Sim. Estas emendas são avaliadas pela equipe técnica da Secretaria Municipal de Planejamento e finanças, com base em critérios técnicos e legais.
-            </div>
-        </div>
-
-        <!-- FAQ Item 9 -->
-        <div class="bg-white rounded-xl shadow-lg mb-4">
-            <button class="faq-toggle w-full flex items-center justify-between p-6 cursor-pointer focus:outline-none">
-                <span class="text-lg font-semibold text-gray-800">9. Como o meu voto influencia o orçamento?</span>
-                <span class="faq-icon text-blue-600 text-3xl font-bold transition-transform duration-300 transform rotate-0">+</span>
-            </button>
-            <div class="faq-answer px-6">
-                <p class="text-gray-600 pb-6">
-                    Os votos serão computados e as áreas mais votadas receberão uma alocação prioritária de recursos dentro da proposta orçamentária que será enviada à Câmara Municipal para aprovação.
-                </p>
-            </div>
-        </div>
-
-        <!-- FAQ Item 10 -->
-        <div class="bg-white rounded-xl shadow-lg mb-4">
-            <button class="faq-toggle w-full flex items-center justify-between p-6 cursor-pointer focus:outline-none">
-                <span class="text-lg font-semibold text-gray-800">10. De onde vem o recurso?</span>
+                <span class="text-lg font-semibold text-gray-800">6. De onde vem o recurso?</span>
                 <span class="faq-icon text-blue-600 text-3xl font-bold transition-transform duration-300 transform rotate-0">+</span>
             </button>
             <div class="faq-answer px-6">
@@ -370,8 +320,61 @@
                 <p class="text-gray-600 pb-6">
                     No âmbito da União, destaca-se o Fundo de Participação dos Municípios (FPM), que reúne recursos federais distribuídos entre todas as cidades brasileiras. Além disso, o município pode contar com transferências voluntárias da esfera estadual ou federal, geralmente formalizadas por convênios, e recorrer a operações de crédito, por meio de financiamentos junto a bancos públicos, privados ou instituições de fomento.
                 </p>
-                </div>
+            </div>
         </div>
+
+        <!-- FAQ Item 7 -->
+        <div class="bg-white rounded-xl shadow-lg mb-4">
+            <button class="faq-toggle w-full flex items-center justify-between p-6 cursor-pointer focus:outline-none">
+                <span class="text-lg font-semibold text-gray-800">7. Quando a LOA chega na Câmara?</span>
+                <span class="faq-icon text-blue-600 text-3xl font-bold transition-transform duration-300 transform rotate-0">+</span>
+            </button>
+            <div class="faq-answer px-6">
+                <p class="text-gray-600 pb-6">
+                    Conforme a Lei Orgânica do Município (LOM), o projeto de lei do orçamento anual deve ser encaminhado à Câmara Municipal até o dia 31 de outubro de cada exercício financeiro. Após sua votação, e com os ajustes feitos pelos vereadores, o texto é devolvido para sanção do prefeito até o dia 20 de dezembro, data que marca o encerramento da sessão legislativa.
+                </p>
+            </div>
+        </div>
+
+        <!-- FAQ Item 8 -->
+        <div class="bg-white rounded-xl shadow-lg mb-4">
+            <button class="faq-toggle w-full flex items-center justify-between p-6 cursor-pointer focus:outline-none">
+                <span class="text-lg font-semibold text-gray-800">8. Como é apresentado o resultado da consulta pública?</span>
+                <span class="faq-icon text-blue-600 text-3xl font-bold transition-transform duration-300 transform rotate-0">+</span>
+            </button>
+            <div class="faq-answer px-6">
+                <p class="text-gray-600 pb-6">
+                    Os resultados serão apresentados por meio da página da consulta virtual loa.riobranco.ac.gov.br, após análise técnica da equipe da Secretaria Municipal de Planejamento e Finanças.
+                </p>
+            </div>
+        </div>
+
+        <!-- FAQ Item 9 -->
+        <div class="bg-white rounded-xl shadow-lg mb-4">
+            <button class="faq-toggle w-full flex items-center justify-between p-6 cursor-pointer focus:outline-none">
+                <span class="text-lg font-semibold text-gray-800">9. Os vereadores podem apresentar emendas?</span>
+                <span class="faq-icon text-blue-600 text-3xl font-bold transition-transform duration-300 transform rotate-0">+</span>
+            </button>
+            <div class="faq-answer px-6">
+                <p class="text-gray-600 pb-6">
+                    Sim. Estas emendas são avaliadas pela equipe técnica da Secretaria Municipal de Planejamento e finanças, com base em critérios técnicos e legais.
+            </div>
+        </div>
+
+        <!-- FAQ Item 10 -->
+        <div class="bg-white rounded-xl shadow-lg mb-4">
+            <button class="faq-toggle w-full flex items-center justify-between p-6 cursor-pointer focus:outline-none">
+                <span class="text-lg font-semibold text-gray-800">10. Como o meu voto influencia o orçamento?</span>
+                <span class="faq-icon text-blue-600 text-3xl font-bold transition-transform duration-300 transform rotate-0">+</span>
+            </button>
+            <div class="faq-answer px-6">
+                <p class="text-gray-600 pb-6">
+                    Os votos serão computados e as áreas mais votadas receberão uma alocação prioritária de recursos dentro da proposta orçamentária que será enviada à Câmara Municipal para aprovação.
+                </p>
+            </div>
+        </div>
+
+        
 
     </div>
 </section>
