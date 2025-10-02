@@ -1937,61 +1937,73 @@
             return;
         }
 
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Enviando...';
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Enviando...';
         statusMessage.classList.add('hidden');
 
-    // Coleta de dados pessoais
-    let personalInfo = {
-        identificado: identified ? "sim" : "nao"
-    };
+    // Coleta de dados pessoais e localização
+    let personalDetails = null;
+    const locationInfo = {};
 
     if (identified) {
         isRioBranco = document.querySelector('input[name="rio-branco"]:checked').value === 'sim';
-        personalInfo = {
-            ...personalInfo,
+        personalDetails = {
             nome: document.getElementById('name').value,
             sexo: document.getElementById('sexo').value,
             escolaridade: document.getElementById('escolaridade').value,
             faixaEtaria: document.getElementById('faixa-etaria').value,
-            moraRioBranco: isRioBranco,
         };
+
+        locationInfo.moraRioBranco = isRioBranco;
         if (isRioBranco) {
-            personalInfo.bairro = document.getElementById('bairro').value;
+            locationInfo.bairro = document.getElementById('bairro').value;
         }
     } else {
         const rioBrancoNaoSelecionado = document.querySelector('input[name="rio-branco-nao"]:checked');
         const moraRioBrancoAnon = rioBrancoNaoSelecionado ? rioBrancoNaoSelecionado.value === 'sim' : false;
-        personalInfo = {
-            ...personalInfo,
-            moraRioBranco: moraRioBrancoAnon,
-        };
+
+        locationInfo.moraRioBranco = moraRioBrancoAnon;
         if (moraRioBrancoAnon && bairroNaoSelect) {
-            personalInfo.bairro = bairroNaoSelect.value;
+            locationInfo.bairro = bairroNaoSelect.value;
         }
     }
 
         // Collect votes
         const votes = {};
-        const eixo1Votes = Array.from(document.querySelectorAll('input[name="eixo1"]:checked')).map(cb => cb.value);
-        const eixo2Votes = Array.from(document.querySelectorAll('input[name="eixo2"]:checked')).map(cb => cb.value);
-        
-        if (eixo1Votes.length > 0) votes.eixo1 = eixo1Votes;
-        if (eixo2Votes.length > 0) votes.eixo2 = eixo2Votes;
+        const axisNames = new Set();
+
+        document.querySelectorAll('.form-checkbox').forEach((checkbox) => {
+            if (checkbox.name) {
+                axisNames.add(checkbox.name);
+            }
+        });
+
+        axisNames.forEach((axis) => {
+            const selections = Array.from(document.querySelectorAll(`input[name="${axis}"]:checked`)).map(cb => cb.value);
+            if (selections.length > 0) {
+                votes[axis] = selections;
+            }
+        });
 
         // Cria objeto final
         const finalData = {
             userId: userId,
             timestamp: Timestamp.now(),
             identificado: identified ? "sim" : "nao",
-            votes: votes,
-            ...personalInfo // se não identificado, só vai { identificado: "nao" }
+            dadosPessoais: personalDetails,
+            localizacao: locationInfo,
+            votes: votes
         };
 
 
         try {
             const suggestionsCollectionRef = collection(db, `artifacts/${appId}/public/data/suggestions`);
-            await addDoc(suggestionsCollectionRef, finalData);
+            const docRef = await addDoc(suggestionsCollectionRef, finalData);
+
+            console.log('✅ Voto registrado com sucesso:', docRef.id, finalData);
+            statusMessage.textContent = 'Sua votação foi registrada com sucesso!';
+            statusMessage.classList.remove('hidden', 'text-red-500');
+            statusMessage.classList.add('text-green-500');
 
             multiPhaseForm.classList.add('hidden');
             finalMessage.classList.remove('hidden');
