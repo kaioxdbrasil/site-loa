@@ -388,8 +388,137 @@
                 </div>
             </div>
 
-            <!-- Fase 3: Votação -->
+            <!-- Fase 3: Localização (Não Identificados) -->
             <div id="phase3" class="phase hidden">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Sua Localização</h2>
+                <p class="text-gray-600 mb-6 text-center">Informe sua relação com Rio Branco para continuarmos.</p>
+
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-semibold mb-2">Você é de Rio Branco?</label>
+                    <div class="flex items-center gap-4">
+                        <label class="inline-flex items-center">
+                            <input type="radio" class="form-radio text-blue-600" name="rio-branco-nao" value="sim" checked>
+                            <span class="ml-2">Sim</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="radio" class="form-radio text-blue-600" name="rio-branco-nao" value="nao">
+                            <span class="ml-2">Não</span>
+                        </label>
+                    </div>
+                </div>
+                <div id="bairro-nao-field" class="mb-6">
+                    <label for="bairro-nao" class="block text-gray-700 font-semibold mb-2">Qual Bairro você mora?</label>
+                    <select id="bairro-nao" name="bairro-nao" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="" disabled selected>Selecione seu bairro</option>
+                        <option value="Abraão Alab">Abraão Alab</option>
+                    <option value="Adalberto Aragão">Adalberto Aragão</option>
+                    <option value="Adalberto Sena">Adalberto Sena</option>
+                    <option value="Aeroporto Velho">Aeroporto Velho</option>
+                    <option value="Alto Alegre">Alto Alegre</option>
+                    <option value="Amapá">Amapá</option>
+                    <option value="Apolônio Sales">Apolônio Sales</option>
+                    <option value="Areal">Areal</option>
+                    <option value="Aviário">Aviário</option>
+                    <option value="Ayrton Sena">Ayrton Sena</option>
+                    <option value="Bahia">Bahia</option>
+                    <option value="Baixa da Colina">Baixa da Colina</option>
+                    <option value="Base">Base</option>
+                    <option value="Belo Jardim">Belo Jardim</option>
+                    <option value="Benfica">Benfica</option>
+                    <option value="Boa União">Boa União</option>
+                    <option value="Boa Vista">Boa Vista</option>
+                    <option value="Bonsucesso">Bonsucesso</option>
+                    <option value="Bosque">Bosque</option>
+                    <option value="Cadeia Velha">Cadeia Velha</option>
+                    <option value="Calafate">Calafate</option>
+                    <option value="Campus UFAC">Campus UFAC</option>
+                    <option value="Canaã">Canaã</option>
+                    <option value="Capoeira">Capoeira</option>
+                    <option value="Centro">Centro</option>
+                    <option value="Cerâmica">Cerâmica</option>
+                    <option value="Chico Mendes">Chico Mendes</option>
+                    <option value="Cidade Do Povo">Cidade Do Povo</option>
+                    <option value="Cidade Nova">Cidade Nova</option>
+                    <option value="Comara">Comara</option>
+                    <option value="Conquista">Conquista</option>
+                    <option value="Custódio Freire">Custódio Freire</option>
+                    <option value="Da Paz">Da Paz</option>
+                    <option value="Defesa Civil">Defesa Civil</option>
+                    <option value="Distrito Industrial">Distrito Industrial</option>
+                    <option value="Eldorado">Eldorado</option>
+                    <option value="Esperança">Esperança</option>
+                    <option value="Estação Experimental">Estação Experimental</option>
+                    <option value="Floresta">Floresta</option>
+                    <option value="Floresta Sul">Floresta Sul</option>
+                    <option value="Glória">Glória</option>
+                    <option value="Guiomard Santos">Guiomard Santos</option>
+                    <option value="Iolanda">Iolanda</option>
+                    <option value="Ipê">Ipê</option>
+                    <option value="Irineu Serra">Irineu Serra</option>
+                    <option value="Isaura Parente">Isaura Parente</option>
+                    <option value="Itucumã">Itucumã</option>
+                    <option value="Ivete Vargas">Ivete Vargas</option>
+                    <option value="Jardim Europa">Jardim Europa</option>
+                    <option value="Jardim Primavera">Jardim Primavera</option>
+                    <option value="Jardim Tropical">Jardim Tropical</option>
+                    <option value="Jardim Universitário">Jardim Universitário</option>
+                    <option value="Joafra">Joafra</option>
+                    <option value="João Eduardo">João Eduardo</option>
+                    <option value="Jorge Lavocat">Jorge Lavocat</option>
+                    <option value="José Augusto">José Augusto</option>
+                    <option value="Laelia Alcantara">Laelia Alcantara</option>
+                    <option value="Manoel Julião">Manoel Julião</option>
+                    <option value="Mocinha Magalhães">Mocinha Magalhães</option>
+                    <option value="Montanhês">Montanhês</option>
+                    <option value="Morada do Sol">Morada do Sol</option>
+                    <option value="Nova Estação">Nova Estação</option>
+                    <option value="Novo Horizonte">Novo Horizonte</option>
+                    <option value="Palheiral">Palheiral</option>
+                    <option value="Panorama">Panorama</option>
+                    <option value="Parque das Palmeiras">Parque das Palmeiras</option>
+                    <option value="Pedro Roseno">Pedro Roseno</option>
+                    <option value="Pista">Pista</option>
+                    <option value="Placas">Placas</option>
+                    <option value="Plácido de Castro (Baixada)">Plácido de Castro (Baixada)</option>
+                    <option value="Portal da Amazônia">Portal da Amazônia</option>
+                    <option value="Preventório">Preventório</option>
+                    <option value="Quinze">Quinze</option>
+                    <option value="Raimundo Melo">Raimundo Melo</option>
+                    <option value="Recanto do Buritis">Recanto do Buritis</option>
+                    <option value="Rosa Linda">Rosa Linda</option>
+                    <option value="Rui Lino">Rui Lino</option>
+                    <option value="Santa Helena">Santa Helena</option>
+                    <option value="Santa Inês">Santa Inês</option>
+                    <option value="Santo Afonso">Santo Afonso</option>
+                    <option value="São Francisco">São Francisco</option>
+                    <option value="Seis de Agosto">Seis de Agosto</option>
+                    <option value="Sobral">Sobral</option>
+                    <option value="Tancredo Neves">Tancredo Neves</option>
+                    <option value="Taquari">Taquari</option>
+                    <option value="Triângulo">Triângulo</option>
+                    <option value="Tucumã">Tucumã</option>
+                    <option value="Universitário">Universitário</option>
+                    <option value="Vila Acre">Vila Acre</option>
+                    <option value="Vila Betel">Vila Betel</option>
+                    <option value="Vila Ivonete">Vila Ivonete</option>
+                    <option value="Vitória">Vitória</option>
+                    <option value="Wanderley Dantas">Wanderley Dantas</option>
+                    <option value="Xavier Maia">Xavier Maia</option>
+                    <option value="Zona Rural">Zona Rural</option>
+                    </select>
+                </div>
+                <div class="flex justify-between gap-4">
+                    <button type="button" id="back3" class="w-1/2 bg-gray-400 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-500 transition-colors duration-300">
+                        Voltar
+                    </button>
+                    <button type="button" id="next3" class="w-1/2 bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300">
+                        Próximo
+                    </button>
+                </div>
+            </div>
+
+            <!-- Fase 4: Votação -->
+            <div id="phase4" class="phase hidden">
                 <h2 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Eixos Temáticos</h2>
                 <p class="text-gray-600 mb-6 text-center">Selecione até 3 projetos por eixo temático para votar.</p>
 
@@ -1419,7 +1548,7 @@
                 </div>
 
                 <div class="flex justify-between gap-4 mt-8">
-                    <button type="button" id="back3" class="w-1/2 bg-gray-400 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-500 transition-colors duration-300">
+                    <button type="button" id="back4" class="w-1/2 bg-gray-400 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-500 transition-colors duration-300">
                         Voltar
                     </button>
                     <button type="submit" id="submit-button" class="w-1/2 bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300">
@@ -1601,13 +1730,25 @@
     const phase1 = document.getElementById('phase1');
     const phase2 = document.getElementById('phase2');
     const phase3 = document.getElementById('phase3');
+    const phase4 = document.getElementById('phase4');
     const next1Btn = document.getElementById('next1');
     const next2Btn = document.getElementById('next2');
+    const next3Btn = document.getElementById('next3');
     const back2Btn = document.getElementById('back2');
     const back3Btn = document.getElementById('back3');
+    const back4Btn = document.getElementById('back4');
     const rioBrancoRadio = document.getElementsByName('rio-branco');
+    const rioBrancoNaoRadio = document.getElementsByName('rio-branco-nao');
     const bairroField = document.getElementById('bairro-field');
+    const bairroNaoField = document.getElementById('bairro-nao-field');
+    const bairroSelect = document.getElementById('bairro');
+    const bairroNaoSelect = document.getElementById('bairro-nao');
     const submitBtn = document.getElementById('submit-button');
+
+    if (bairroSelect && bairroNaoSelect) {
+        bairroNaoSelect.innerHTML = bairroSelect.innerHTML;
+    }
+
     submitBtn.disabled = true; // desabilita até autenticar
     const multiPhaseForm = document.getElementById('multi-phase-form');
     const statusMessage = document.getElementById('status-message');
@@ -1631,6 +1772,9 @@
             formTitle.textContent = 'Dados Opcionais';
         } else if (phaseNumber === 3) {
             phase3.classList.remove('hidden');
+            formTitle.textContent = 'Sua Localização';
+        } else if (phaseNumber === 4) {
+            phase4.classList.remove('hidden');
             formTitle.textContent = 'Eixos Temáticos';
         }
     }
@@ -1655,6 +1799,15 @@
             document.getElementById('sexo').removeAttribute('required');
             document.getElementById('escolaridade').removeAttribute('required');
             document.getElementById('faixa-etaria').removeAttribute('required');
+            if (rioBrancoNaoRadio.length > 0) {
+                rioBrancoNaoRadio[0].checked = true;
+            }
+            if (bairroNaoSelect) {
+                bairroNaoSelect.value = '';
+            }
+            if (bairroNaoField) {
+                bairroNaoField.classList.remove('hidden');
+            }
         }
     });
 
@@ -1675,24 +1828,73 @@
     }
 
     previousPhase = 2;
-    showPhase(3);
+    showPhase(4);
 });
+
+    next3Btn.addEventListener('click', () => {
+        const rioBrancoNaoSelecionado = document.querySelector('input[name="rio-branco-nao"]:checked');
+        if (!rioBrancoNaoSelecionado) {
+            openModal();
+            return;
+        }
+
+        const moraRioBrancoAnon = rioBrancoNaoSelecionado.value === 'sim';
+        const bairroAnon = bairroNaoSelect ? bairroNaoSelect.value : '';
+
+        if (moraRioBrancoAnon && !bairroAnon) {
+            openModal();
+            return;
+        }
+
+        previousPhase = 3;
+        showPhase(4);
+    });
 
     back2Btn.addEventListener('click', () => {
         showPhase(1);
     });
     
     back3Btn.addEventListener('click', () => {
+        showPhase(1);
+    });
+
+    back4Btn.addEventListener('click', () => {
         showPhase(previousPhase);
     });
     
     // Logic for "Você é de Rio Branco?" question
     rioBrancoRadio.forEach(radio => {
-        radio.addEventListener('change', () => {
-            isRioBranco = (radio.value === 'sim');
-            bairroField.classList.toggle('hidden', !isRioBranco);
+        radio.addEventListener('change', (event) => {
+            if (!event.target.checked) return;
+            isRioBranco = (event.target.value === 'sim');
+            if (bairroField) {
+                bairroField.classList.toggle('hidden', !isRioBranco);
+            }
         });
     });
+
+    rioBrancoNaoRadio.forEach(radio => {
+        radio.addEventListener('change', (event) => {
+            if (!event.target.checked) return;
+            const moraEmRioBranco = (event.target.value === 'sim');
+            if (bairroNaoField) {
+                bairroNaoField.classList.toggle('hidden', !moraEmRioBranco);
+            }
+            if (!moraEmRioBranco && bairroNaoSelect) {
+                bairroNaoSelect.value = '';
+            }
+        });
+    });
+
+    const rioBrancoInicial = document.querySelector('input[name="rio-branco"]:checked');
+    if (rioBrancoInicial && bairroField) {
+        bairroField.classList.toggle('hidden', rioBrancoInicial.value !== 'sim');
+    }
+
+    const rioBrancoNaoInicial = document.querySelector('input[name="rio-branco-nao"]:checked');
+    if (rioBrancoNaoInicial && bairroNaoField) {
+        bairroNaoField.classList.toggle('hidden', rioBrancoNaoInicial.value !== 'sim');
+    }
 
     // Logic for collapsible axes
     collapsibleHeaders.forEach(header => {
@@ -1757,6 +1959,16 @@
         if (isRioBranco) {
             personalInfo.bairro = document.getElementById('bairro').value;
         }
+    } else {
+        const rioBrancoNaoSelecionado = document.querySelector('input[name="rio-branco-nao"]:checked');
+        const moraRioBrancoAnon = rioBrancoNaoSelecionado ? rioBrancoNaoSelecionado.value === 'sim' : false;
+        personalInfo = {
+            ...personalInfo,
+            moraRioBranco: moraRioBrancoAnon,
+        };
+        if (moraRioBrancoAnon && bairroNaoSelect) {
+            personalInfo.bairro = bairroNaoSelect.value;
+        }
     }
 
         // Collect votes
@@ -1803,7 +2015,7 @@
         if (navItens.classList.contains('show')) {
             navItens.classList.remove('show');
         } else {
-            navItens.classList.add('show');s
+            navItens.classList.add('show');
         }
     }
 
