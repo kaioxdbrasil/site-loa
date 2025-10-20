@@ -83,7 +83,7 @@
         }
         .btn-opine {
             background-color: #ffffff;
-            color: #2563eb;
+            color: #aeb8ce;
             padding: 0.5rem 1rem;
             border-radius: 9999px;
             font-weight: bold;
@@ -388,8 +388,137 @@
                 </div>
             </div>
 
-            <!-- Fase 3: Votação -->
+            <!-- Fase 3: Localização (Não Identificados) -->
             <div id="phase3" class="phase hidden">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Sua Localização</h2>
+                <p class="text-gray-600 mb-6 text-center">Informe sua relação com Rio Branco para continuarmos.</p>
+
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-semibold mb-2">Você é de Rio Branco?</label>
+                    <div class="flex items-center gap-4">
+                        <label class="inline-flex items-center">
+                            <input type="radio" class="form-radio text-blue-600" name="rio-branco-nao" value="sim" checked>
+                            <span class="ml-2">Sim</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="radio" class="form-radio text-blue-600" name="rio-branco-nao" value="nao">
+                            <span class="ml-2">Não</span>
+                        </label>
+                    </div>
+                </div>
+                <div id="bairro-nao-field" class="mb-6">
+                    <label for="bairro-nao" class="block text-gray-700 font-semibold mb-2">Qual Bairro você mora?</label>
+                    <select id="bairro-nao" name="bairro-nao" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="" disabled selected>Selecione seu bairro</option>
+                        <option value="Abraão Alab">Abraão Alab</option>
+                    <option value="Adalberto Aragão">Adalberto Aragão</option>
+                    <option value="Adalberto Sena">Adalberto Sena</option>
+                    <option value="Aeroporto Velho">Aeroporto Velho</option>
+                    <option value="Alto Alegre">Alto Alegre</option>
+                    <option value="Amapá">Amapá</option>
+                    <option value="Apolônio Sales">Apolônio Sales</option>
+                    <option value="Areal">Areal</option>
+                    <option value="Aviário">Aviário</option>
+                    <option value="Ayrton Sena">Ayrton Sena</option>
+                    <option value="Bahia">Bahia</option>
+                    <option value="Baixa da Colina">Baixa da Colina</option>
+                    <option value="Base">Base</option>
+                    <option value="Belo Jardim">Belo Jardim</option>
+                    <option value="Benfica">Benfica</option>
+                    <option value="Boa União">Boa União</option>
+                    <option value="Boa Vista">Boa Vista</option>
+                    <option value="Bonsucesso">Bonsucesso</option>
+                    <option value="Bosque">Bosque</option>
+                    <option value="Cadeia Velha">Cadeia Velha</option>
+                    <option value="Calafate">Calafate</option>
+                    <option value="Campus UFAC">Campus UFAC</option>
+                    <option value="Canaã">Canaã</option>
+                    <option value="Capoeira">Capoeira</option>
+                    <option value="Centro">Centro</option>
+                    <option value="Cerâmica">Cerâmica</option>
+                    <option value="Chico Mendes">Chico Mendes</option>
+                    <option value="Cidade Do Povo">Cidade Do Povo</option>
+                    <option value="Cidade Nova">Cidade Nova</option>
+                    <option value="Comara">Comara</option>
+                    <option value="Conquista">Conquista</option>
+                    <option value="Custódio Freire">Custódio Freire</option>
+                    <option value="Da Paz">Da Paz</option>
+                    <option value="Defesa Civil">Defesa Civil</option>
+                    <option value="Distrito Industrial">Distrito Industrial</option>
+                    <option value="Eldorado">Eldorado</option>
+                    <option value="Esperança">Esperança</option>
+                    <option value="Estação Experimental">Estação Experimental</option>
+                    <option value="Floresta">Floresta</option>
+                    <option value="Floresta Sul">Floresta Sul</option>
+                    <option value="Glória">Glória</option>
+                    <option value="Guiomard Santos">Guiomard Santos</option>
+                    <option value="Iolanda">Iolanda</option>
+                    <option value="Ipê">Ipê</option>
+                    <option value="Irineu Serra">Irineu Serra</option>
+                    <option value="Isaura Parente">Isaura Parente</option>
+                    <option value="Itucumã">Itucumã</option>
+                    <option value="Ivete Vargas">Ivete Vargas</option>
+                    <option value="Jardim Europa">Jardim Europa</option>
+                    <option value="Jardim Primavera">Jardim Primavera</option>
+                    <option value="Jardim Tropical">Jardim Tropical</option>
+                    <option value="Jardim Universitário">Jardim Universitário</option>
+                    <option value="Joafra">Joafra</option>
+                    <option value="João Eduardo">João Eduardo</option>
+                    <option value="Jorge Lavocat">Jorge Lavocat</option>
+                    <option value="José Augusto">José Augusto</option>
+                    <option value="Laelia Alcantara">Laelia Alcantara</option>
+                    <option value="Manoel Julião">Manoel Julião</option>
+                    <option value="Mocinha Magalhães">Mocinha Magalhães</option>
+                    <option value="Montanhês">Montanhês</option>
+                    <option value="Morada do Sol">Morada do Sol</option>
+                    <option value="Nova Estação">Nova Estação</option>
+                    <option value="Novo Horizonte">Novo Horizonte</option>
+                    <option value="Palheiral">Palheiral</option>
+                    <option value="Panorama">Panorama</option>
+                    <option value="Parque das Palmeiras">Parque das Palmeiras</option>
+                    <option value="Pedro Roseno">Pedro Roseno</option>
+                    <option value="Pista">Pista</option>
+                    <option value="Placas">Placas</option>
+                    <option value="Plácido de Castro (Baixada)">Plácido de Castro (Baixada)</option>
+                    <option value="Portal da Amazônia">Portal da Amazônia</option>
+                    <option value="Preventório">Preventório</option>
+                    <option value="Quinze">Quinze</option>
+                    <option value="Raimundo Melo">Raimundo Melo</option>
+                    <option value="Recanto do Buritis">Recanto do Buritis</option>
+                    <option value="Rosa Linda">Rosa Linda</option>
+                    <option value="Rui Lino">Rui Lino</option>
+                    <option value="Santa Helena">Santa Helena</option>
+                    <option value="Santa Inês">Santa Inês</option>
+                    <option value="Santo Afonso">Santo Afonso</option>
+                    <option value="São Francisco">São Francisco</option>
+                    <option value="Seis de Agosto">Seis de Agosto</option>
+                    <option value="Sobral">Sobral</option>
+                    <option value="Tancredo Neves">Tancredo Neves</option>
+                    <option value="Taquari">Taquari</option>
+                    <option value="Triângulo">Triângulo</option>
+                    <option value="Tucumã">Tucumã</option>
+                    <option value="Universitário">Universitário</option>
+                    <option value="Vila Acre">Vila Acre</option>
+                    <option value="Vila Betel">Vila Betel</option>
+                    <option value="Vila Ivonete">Vila Ivonete</option>
+                    <option value="Vitória">Vitória</option>
+                    <option value="Wanderley Dantas">Wanderley Dantas</option>
+                    <option value="Xavier Maia">Xavier Maia</option>
+                    <option value="Zona Rural">Zona Rural</option>
+                    </select>
+                </div>
+                <div class="flex justify-between gap-4">
+                    <button type="button" id="back3" class="w-1/2 bg-gray-400 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-500 transition-colors duration-300">
+                        Voltar
+                    </button>
+                    <button type="button" id="next3" class="w-1/2 bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300">
+                        Próximo
+                    </button>
+                </div>
+            </div>
+
+            <!-- Fase 4: Votação -->
+            <div id="phase4" class="phase hidden">
                 <h2 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Eixos Temáticos</h2>
                 <p class="text-gray-600 mb-6 text-center">Selecione até 3 projetos por eixo temático para votar.</p>
 
@@ -402,54 +531,55 @@
                     <div class="collapsible-content overflow-hidden transition-all duration-500">
                         <div class="grid grid-cols-1 gap-4 mt-4 px-2">
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo1" value="Projeto de revitalização de áreas verdes">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo1" value="Ampliar e qualificar os serviços especializados de Saúde">
                                 <span class="ml-2 text-gray-700">Ampliar e qualificar os serviços especializados de Saúde</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo1" value="Incentivo a agricultura familiar">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo1" value="Qualificar o acesso e a resolutividade da Atenção Primária à Saúde">
                                 <span class="ml-2 text-gray-700">Qualificar o acesso e a resolutividade da Atenção Primária à Saúde</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo1" value="Construção de ecoparques">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo1" value="Assegurar a equidade na atenção à saúde de populações específicas e em situação de risco e vulnerabilidade.">
                                 <span class="ml-2 text-gray-700">Assegurar a equidade na atenção à saúde de populações específicas e em situação de risco e vulnerabilidade.</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo1" value="Apoio a pequenas empresas">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo1" value="Fortalecer a vigilância em saúde para prevenção e controle de doenças e agravos">
                                 <span class="ml-2 text-gray-700">Fortalecer a vigilância em saúde para prevenção e controle de doenças e agravos</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo1" value="Apoio a pequenas empresas">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo1" value="Assegurar ações de comunicação e informação em saúde">
                                 <span class="ml-2 text-gray-700">Assegurar ações de comunicação e informação em saúde</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo1" value="Apoio a pequenas empresas">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo1" value="Fortalecer a Assistência Farmacêutica Municipal">
                                 <span class="ml-2 text-gray-700">Fortalecer a Assistência Farmacêutica Municipal</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo1" value="Apoio a pequenas empresas">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo1" value="Qualificar a gestão e a organização do SUS no município">
                                 <span class="ml-2 text-gray-700">Qualificar a gestão e a organização do SUS no município</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo1" value="Apoio a pequenas empresas">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo1" value="Modernizar e ampliar o sistema de abastecimento de água">
                                 <span class="ml-2 text-gray-700">Modernizar e ampliar o sistema de abastecimento de água</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo1" value="Apoio a pequenas empresas">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo1" value="Modernizar e ampliar o sistema de esgotamento sanitário">
                                 <span class="ml-2 text-gray-700">Modernizar e ampliar o sistema de esgotamento sanitário</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo1" value="Apoio a pequenas empresas">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo1" value="Promover a eficiência hídrica e a redução de perdas no sistema de abastecimento de água">
                                 <span class="ml-2 text-gray-700">Promover a eficiência hídrica e a redução de perdas no sistema de abastecimento de água</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo1" value="Apoio a pequenas empresas">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo1" value="Implementar campanhas de regularização fiscal e ações de educação financeira, ampliando o acesso da população a instrumentos de orientação e negociação de débitos.">
                                 <span class="ml-2 text-gray-700">Implementar campanhas de regularização fiscal e ações de educação financeira, ampliando o acesso da população a instrumentos de orientação e negociação de débitos.</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo1" value="Apoio a pequenas empresas">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo1" value="Implantar Sistemas de Abastecimento de Água com Captação Alternativa em Áreas Rurais">
                                 <span class="ml-2 text-gray-700">Implantar Sistemas de Abastecimento de Água com Captação Alternativa em Áreas Rurais</span>
                             </label>
                             <label class="checkbox-label flex items-center">
+<<<<<<< HEAD
                                 <input type="checkbox" class="form-checkbox text-blue-600" name="eixo1" value="Apoio a pequenas empresas">
                                 <span class="ml-2 text-gray-700">Ampliar e Planejar a Sustentabilidade do Abastecimento Público de Água</span>
                             </label>
@@ -471,6 +601,9 @@
                             </label>
                             <label class="checkbox-label flex items-center">
                                 <input type="checkbox" class="form-checkbox text-blue-600" name="eixo1" value="Apoio a pequenas empresas">
+=======
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo1" value="Ampliar e Planejar a Sustentabilidade do Abastecimento Público de Água">
+>>>>>>> d6e70c44ec036fff162bf9ad1c0e410abf8bfabd
                                 <span class="ml-2 text-gray-700">Ampliar e Planejar a Sustentabilidade do Abastecimento Público de Água</span>
                             </label>
                         </div>
@@ -487,139 +620,139 @@
                     <div class="collapsible-content overflow-hidden transition-all duration-500">
                         <div class="grid grid-cols-1 gap-4 mt-4 px-2">
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Expansão de unidades de saúde">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Fomentar a implantação de sistemas de armazenamento de água para irrigação na agricultura a pecuária familiar">
                                 <span class="ml-2 text-gray-700">Fomentar a implantação de sistemas de armazenamento de água para irrigação na agricultura a pecuária familiar</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Construção de novas escolas">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Fomentar a avicultura e a suinocultura de subsistência a comercial, integradas cadeia produtiva de grãos">
                                 <span class="ml-2 text-gray-700">Fomentar a avicultura e a suinocultura de subsistência a comercial, integradas cadeia produtiva de grãos</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Programas de esporte e lazer">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Implementar ações de inovação tecnológica na produção rural com foco em sustentabilidade ambiental a viabilidade econômica">
                                 <span class="ml-2 text-gray-700">Implementar ações de inovação tecnológica na produção rural com foco em sustentabilidade ambiental a viabilidade econômica</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Fomentar o melhoramento genético e alimentar da pecuária leiteira familiar.">
                                 <span class="ml-2 text-gray-700">Fomentar o melhoramento genético e alimentar da pecuária leiteira familiar.</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Ampliar parcerias com instituições de ensino, pesquisa e extensão para fortalecer a inovação e formação técnica no campo.">
                                 <span class="ml-2 text-gray-700">Ampliar parcerias com instituições de ensino, pesquisa e extensão para fortalecer a inovação e formação técnica no campo.</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Fomentar a implantação de lavouras de grãos em áreas produtivas do município">
                                 <span class="ml-2 text-gray-700">Fomentar a implantação de lavouras de grãos em áreas produtivas do município</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Ampliar as ações do Programa Municipal de Aquisição de Alimentos (PAA Municipal).">
                                 <span class="ml-2 text-gray-700">Ampliar as ações do Programa Municipal de Aquisição de Alimentos (PAA Municipal).</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Instituir programas de incentivo à fruticultura e à piscicultura no município de Rio Branco">
                                 <span class="ml-2 text-gray-700">Instituir programas de incentivo à fruticultura e à piscicultura no município de Rio Branco</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Executar obras de recuperação e manutenção de ramais rurais">
                                 <span class="ml-2 text-gray-700">Executar obras de recuperação e manutenção de ramais rurais</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Fomentar a revitalização de hortas comunitárias e cultivo protegido nas zonas rurais">
                                 <span class="ml-2 text-gray-700">Fomentar a revitalização de hortas comunitárias e cultivo protegido nas zonas rurais</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Implementar ações para o escoamento da produção rural de base familiar">
                                 <span class="ml-2 text-gray-700">Implementar ações para o escoamento da produção rural de base familiar</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Fomentar a expansão das feiras livres">
                                 <span class="ml-2 text-gray-700">Fomentar a expansão das feiras livres</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Implantar um Programa de Governo Digital">
                                 <span class="ml-2 text-gray-700">Implantar um Programa de Governo Digital</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Instituir o Programa Municipal de Reciclagem de Lixo Eletrônico">
                                 <span class="ml-2 text-gray-700">Instituir o Programa Municipal de Reciclagem de Lixo Eletrônico</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Instituir o Programa Municipal de Inteligência Artificial">
                                 <span class="ml-2 text-gray-700">Instituir o Programa Municipal de Inteligência Artificial</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Instituir o Plano Municipal de Tecnologia e Inovação">
                                 <span class="ml-2 text-gray-700">Instituir o Plano Municipal de Tecnologia e Inovação.</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Disponibilizar solução digital integrada para acesso a serviços municipais, por meio do aplicativo 'Rio Branco na Palma da Mão'">
                                 <span class="ml-2 text-gray-700">Disponibilizar solução digital integrada para acesso a serviços municipais, por meio do aplicativo "Rio Branco na Palma da Mão"</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Promover Feira Municipal de Inovação “Tech Jovem” como ação permanente de fomento à ciência, tecnologia e empreendedorismo">
                                 <span class="ml-2 text-gray-700">Promover Feira Municipal de Inovação “Tech Jovem” como ação permanente de fomento à ciência, tecnologia e empreendedorismo</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Delimitar e regulamentar áreas prioritárias para o desenvolvimento de tecnologia e inovação no município">
                                 <span class="ml-2 text-gray-700">Delimitar e regulamentar áreas prioritárias para o desenvolvimento de tecnologia e inovação no município</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Implantar o Portal de Informações Fundiárias de Rio Branco">
                                 <span class="ml-2 text-gray-700">Implantar o Portal de Informações Fundiárias de Rio Branco</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Implantar ferramenta tecnológica para tramitação documental 100% digital">
                                 <span class="ml-2 text-gray-700">Implantar ferramenta tecnológica para tramitação documental 100% digital</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Implementar programa de fomento a microempreendedores para prestação de serviços à rede pública.">
                                 <span class="ml-2 text-gray-700">Implementar programa de fomento a microempreendedores para prestação de serviços à rede pública.</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Implantar Coworking Público com suporte técnico a empreendedores">
                                 <span class="ml-2 text-gray-700">Implantar Coworking Público com suporte técnico a empreendedores</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Implantar programa de incentivo ao empreendedorismo feminino, com foco na capacitação, formalização e apoio a iniciativas lideradas por mulheres">
                                 <span class="ml-2 text-gray-700">Implantar programa de incentivo ao empreendedorismo feminino, com foco na capacitação, formalização e apoio a iniciativas lideradas por mulheres</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Fomentar participação de MEIs e MPEs em licitações públicas">
                                 <span class="ml-2 text-gray-700">Fomentar participação de MEIs e MPEs em licitações públicas</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Implementar o Programa Meu Primeiro Negócio">
                                 <span class="ml-2 text-gray-700">Implementar o Programa Meu Primeiro Negócio</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Apoiar iniciativas de economia solidária">
                                 <span class="ml-2 text-gray-700">Apoiar iniciativas de economia solidária</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Implantar programas de fomento a startups e empreendedorismo digital">
                                 <span class="ml-2 text-gray-700">Implantar programas de fomento a startups e empreendedorismo digital</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Instituir o Programa Municipal de Empreendedorismo Digital">
                                 <span class="ml-2 text-gray-700">Instituir o Programa Municipal de Empreendedorismo Digital</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Ampliar parcerias com instituições de ensino e pesquisa para fortalecimento do desenvolvimento econômico municipal">
                                 <span class="ml-2 text-gray-700">Ampliar parcerias com instituições de ensino e pesquisa para fortalecimento do desenvolvimento econômico municipal</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Implantar o Plano Municipal de Turismo">
                                 <span class="ml-2 text-gray-700">Implantar o Plano Municipal de Turismo</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Criar o Selo Amigo do Turismo">
                                 <span class="ml-2 text-gray-700">Criar o Selo Amigo do Turismo</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Instalar sistemas de Wi-Fi gratuito em pontos turísticos e praças públicas">
                                 <span class="ml-2 text-gray-700">Instalar sistemas de Wi-Fi gratuito em pontos turísticos e praças públicas</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Implantar o Projeto de Cicloturismo e Mototurismo">
                                 <span class="ml-2 text-gray-700">Implantar o Projeto de Cicloturismo e Mototurismo</span>
                             </label>
                         </div>
@@ -636,23 +769,23 @@
                     <div class="collapsible-content overflow-hidden transition-all duration-500">
                         <div class="grid grid-cols-1 gap-4 mt-4 px-2">
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo3" value="Expansão de unidades de saúde">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo3" value="Promover o Acesso à Moradia Digna por Meio da Construção de Unidades Habitacionais(continuidade à implantação dos Programas 1.001 Dignidades, Minha Dignidade e Minha Casa, Minha Vida)">
                                 <span class="ml-2 text-gray-700">Promover o Acesso à Moradia Digna por Meio da Construção de Unidades Habitacionais(continuidade à implantação dos Programas 1.001 Dignidades, Minha Dignidade e Minha Casa, Minha Vida)</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo3" value="Construção de novas escolas">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo3" value="Ampliar o Programa 1.001 Dignidades">
                                 <span class="ml-2 text-gray-700">Ampliar o Programa 1.001 Dignidades</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo3" value="Programas de esporte e lazer">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo3" value="Conceder lotes urbanos para habitação de interesse social (Meu terreno, Minha dignidade)">
                                 <span class="ml-2 text-gray-700">Conceder lotes urbanos para habitação de interesse social (Meu terreno, Minha dignidade) </span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo3" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo3" value="Atualizar o Plano Municipal de Habitação de Interesse Social">
                                 <span class="ml-2 text-gray-700">Atualizar o Plano Municipal de Habitação de Interesse Social</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo3" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo3" value="Fornecer assistência técnica em habitação de interesse social - ATHIS (Minha Reforma, Minha Dignidade)">
                                 <span class="ml-2 text-gray-700">Fornecer assistência técnica em habitação de interesse social - ATHIS (Minha Reforma, Minha Dignidade)</span>
                             </label>
                         </div>
@@ -669,91 +802,91 @@
                     <div class="collapsible-content overflow-hidden transition-all duration-500">
                         <div class="grid grid-cols-1 gap-4 mt-4 px-2">
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Expansão de unidades de saúde">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Construir, ampliar e manter calçadas para qualificação da mobilidade urbana e acessibilidade">
                                 <span class="ml-2 text-gray-700">Construir, ampliar e manter calçadas para qualificação da mobilidade urbana e acessibilidade</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Construção de novas escolas">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Executar serviços de recuperação de calçadas existentes">
                                 <span class="ml-2 text-gray-700">Executar serviços de recuperação de calçadas existentes</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Programas de esporte e lazer">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Implantar o Plano de Drenagem Urbana">
                                 <span class="ml-2 text-gray-700">Implantar o Plano de Drenagem Urbana</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Aprimorar a mobilidade urbana por meio da implantação de obras e intervenções estruturais viárias">
                                 <span class="ml-2 text-gray-700">Aprimorar a mobilidade urbana por meio da implantação de obras e intervenções estruturais viárias </span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Requalificar e recuperar a malha cicloviária urbana, garantindo mobilidade ativa e segura">
                                 <span class="ml-2 text-gray-700">Requalificar e recuperar a malha cicloviária urbana, garantindo mobilidade ativa e segura</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Ampliar a quantidade de ciclofaixas">
                                 <span class="ml-2 text-gray-700">Ampliar a quantidade de ciclofaixas</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Implantar Programa Ambulante Legal">
                                 <span class="ml-2 text-gray-700">Implantar Programa Ambulante Legal</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Construir e manter pontes">
                                 <span class="ml-2 text-gray-700">Construir e manter pontes</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Revitalizar espaços públicos">
                                 <span class="ml-2 text-gray-700">Revitalizar espaços públicos</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Implantar pontos de fiscalização eletrônica em vias urbanas">
                                 <span class="ml-2 text-gray-700">Implantar pontos de fiscalização eletrônica em vias urbanas</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Implantar placas de orientação de tráfego">
                                 <span class="ml-2 text-gray-700">Implantar placas de orientação de tráfego</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Revitalizar a sinalização viária horizontal e vertical">
                                 <span class="ml-2 text-gray-700">Revitalizar a sinalização viária horizontal e vertical</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Revitalizar trecho da malha cicloviária urbana">
                                 <span class="ml-2 text-gray-700">Revitalizar trecho da malha cicloviária urbana</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Modernizar cruzamentos com sistemas semafóricos inteligentes">
                                 <span class="ml-2 text-gray-700">Modernizar cruzamentos com sistemas semafóricos inteligentes</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Renovar a frota de motocicletas operacionais da RBTRANS">
                                 <span class="ml-2 text-gray-700">Renovar a frota de motocicletas operacionais da RBTRANS</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Renovar a frota do SITURB com ônibus elétrico e Euro 6">
                                 <span class="ml-2 text-gray-700">Renovar a frota do SITURB com ônibus elétrico e Euro 6</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Implantar abrigos de parada de ônibus">
                                 <span class="ml-2 text-gray-700">Implantar abrigos de parada de ônibus</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Implantar sistema integrado de bilhetagem eletrônica e monitoramento por GPS no Sistema Integrado de Transporte Urbano de Rio Branco – SITURB">
                                 <span class="ml-2 text-gray-700">Implantar sistema integrado de bilhetagem eletrônica e monitoramento por GPS no Sistema Integrado de Transporte Urbano de Rio Branco – SITURB</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Implementar Programa de Educação de Trânsito">
                                 <span class="ml-2 text-gray-700">Implementar Programa de Educação de Trânsito</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Pavimentar novas ruas">
                                 <span class="ml-2 text-gray-700">Pavimentar novas ruas</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Recapear vias Urbanas">
                                 <span class="ml-2 text-gray-700">Recapear vias Urbanas</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo4" value="Realizar manutenção de vias Urbanas">
                                 <span class="ml-2 text-gray-700">Realizar manutenção de vias Urbanas</span>
                             </label>
                         </div>
@@ -770,115 +903,115 @@
                     <div class="collapsible-content overflow-hidden transition-all duration-500">
                         <div class="grid grid-cols-1 gap-4 mt-4 px-2">
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Expansão de unidades de saúde">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Manutenção do Atendimento em Creches">
                                 <span class="ml-2 text-gray-700">Manutenção do Atendimento em Creches</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Construção de novas escolas">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Manutenção do Atendimento em Pré-Escola">
                                 <span class="ml-2 text-gray-700">Manutenção do Atendimento em Pré-Escola</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Programas de esporte e lazer">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Manutenção do Atendimento em Ensino Fundamental Anos Iniciais">
                                 <span class="ml-2 text-gray-700">Manutenção do Atendimento em Ensino Fundamental Anos Iniciais</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Fortalecer o Programa de Alimentação Escolar">
                                 <span class="ml-2 text-gray-700">Fortalecer o Programa de Alimentação Escolar</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Fortalecer o Programa de Transporte na Escola">
                                 <span class="ml-2 text-gray-700">Fortalecer o Programa de Transporte na Escola</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Fortalecer o Programa de Formação Continuada de Professores da Rede Municipal, por meio da contratação de profissionais especializados para prestar assessoria à equipe de formadores da SEME">
                                 <span class="ml-2 text-gray-700">Fortalecer o Programa de Formação Continuada de Professores da Rede Municipal, por meio da contratação de profissionais especializados para prestar assessoria à equipe de formadores da SEME</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Aprimorar o Programa de Formação Continuada de Professores da Rede Municipal">
                                 <span class="ml-2 text-gray-700">Aprimorar o Programa de Formação Continuada de Professores da Rede Municipal</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Fortalecer a Educação de Jovens e Adultos -EJA">
                                 <span class="ml-2 text-gray-700">Fortalecer a Educação de Jovens e Adultos -EJA</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Ampliar a Oferta de Vagas em Berçários, Creches, Pré-Escola, Anos Iniciais do Ensino Fundamental, EJA e Educação em Tempo Integral">
                                 <span class="ml-2 text-gray-700">Ampliar a Oferta de Vagas em Berçários, Creches, Pré-Escola, Anos Iniciais do Ensino Fundamental, EJA e Educação em Tempo Integral</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Monitorar o Plano Municipal de Educação">
                                 <span class="ml-2 text-gray-700">Monitorar o Plano Municipal de Educação</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Manutenção do Programa Municipal de Aquisição de Alimentos da Agricultura Familiar (PMAA)">
                                 <span class="ml-2 text-gray-700">Manutenção do Programa Municipal de Aquisição de Alimentos da Agricultura Familiar (PMAA)</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Garantir a Promoção da Saúde dos Alunos da Rede Municipal, por meio do Programa Saúde na Escola">
                                 <span class="ml-2 text-gray-700">Garantir a Promoção da Saúde dos Alunos da Rede Municipal, por meio do Programa Saúde na Escola</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Promover ações de comunicação educativa voltadas à ampliação do acesso à informação, conscientização e fortalecimento das políticas públicas">
                                 <span class="ml-2 text-gray-700">Promover ações de comunicação educativa voltadas à ampliação do acesso à informação, conscientização e fortalecimento das políticas públicas</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Implantar o Projeto Tech Jovem">
                                 <span class="ml-2 text-gray-700">Implantar o Projeto Tech Jovem</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Fornecer Kit completo de uniforme escolar e material pedagógico para todos os alunos da rede municipal de ensino.">
                                 <span class="ml-2 text-gray-700">Fornecer Kit completo de uniforme escolar e material pedagógico para todos os alunos da rede municipal de ensino.</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Elevar os Índices de Aprendizagem dos Alunos, por meio do Fortalecimento do Compromisso Nacional Criança Alfabetizada e do Projeto de Recomposição da Aprendizagem">
                                 <span class="ml-2 text-gray-700">Elevar os Índices de Aprendizagem dos Alunos, por meio do Fortalecimento do Compromisso Nacional Criança Alfabetizada e do Projeto de Recomposição da Aprendizagem</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Ampliar o Atendimento Educacional Especializado (AEE), buscando novas estratégias, para a garantia da oferta de educação especializada com qualidade">
                                 <span class="ml-2 text-gray-700">Ampliar o Atendimento Educacional Especializado (AEE), buscando novas estratégias, para a garantia da oferta de educação especializada com qualidade</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Ampliar Programa de Alimentação Escolar e do Programa Municipal de Aquisição de Alimentos da Agricultura Familiar (PMAA), a fim de garantir alimentação adequada às crianças com TEA (Transtorno do Espectro Autista), mediante recomendação médica">
                                 <span class="ml-2 text-gray-700">Ampliar Programa de Alimentação Escolar e do Programa Municipal de Aquisição de Alimentos da Agricultura Familiar (PMAA), a fim de garantir alimentação adequada às crianças com TEA (Transtorno do Espectro Autista), mediante recomendação médica</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Implantar Observatório de Segurança Escolar, objetivando combate à violência e ao preconceito nas unidades educativas">
                                 <span class="ml-2 text-gray-700">Implantar Observatório de Segurança Escolar, objetivando combate à violência e ao preconceito nas unidades educativas</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Combater à infrequência, evasão e ao abandono escolar, por meio de Calendário Escolar diferenciado para as Escolas de Zona Rural e pelo Programa Busca Ativa Escolar, em todas as Etapas e Modalidades de Ensino.">
                                 <span class="ml-2 text-gray-700">Combater à infrequência, evasão e ao abandono escolar, por meio de Calendário Escolar diferenciado para as Escolas de Zona Rural e pelo Programa Busca Ativa Escolar, em todas as Etapas e Modalidades de Ensino.</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Implantar o Atendimento Multidisciplinar na Educação Especial, para a avaliação contextual adequada dos alunos com deficiência.">
                                 <span class="ml-2 text-gray-700">Implantar o Atendimento Multidisciplinar na Educação Especial, para a avaliação contextual adequada dos alunos com deficiência.</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Desenvolver projetos de educação empreendedora e financeira nas escolas da rede municipal voltados para os alunos dos 4º e 5º anos, estabelecendo parcerias com outras instituições">
                                 <span class="ml-2 text-gray-700">Desenvolver projetos de educação empreendedora e financeira nas escolas da rede municipal voltados para os alunos dos 4º e 5º anos, estabelecendo parcerias com outras instituições</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Ampliar atividades esportivas e estabelecer parcerias interinstitucionais para fomentar a prática esportiva e o uso compartilhado de estruturas e serviços">
                                 <span class="ml-2 text-gray-700">Ampliar atividades esportivas e estabelecer parcerias interinstitucionais para fomentar a prática esportiva e o uso compartilhado de estruturas e serviços</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Ampliar a oferta de cursos de libras e de braile, preferencialmente para os profissionais da educação especial">
                                 <span class="ml-2 text-gray-700">Ampliar a oferta de cursos de libras e de braile, preferencialmente para os profissionais da educação especial</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Implementar o Serviço SOS Escola para o atendimento emergencial aos alunos.">
                                 <span class="ml-2 text-gray-700">Implementar o Serviço SOS Escola para o atendimento emergencial aos alunos.</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Ampliar Programa Hortas e Fazendinhas nas escolas.">
                                 <span class="ml-2 text-gray-700">Ampliar Programa Hortas e Fazendinhas nas escolas.</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Implementar Escola Centralizada no Projeto Moreno Maia e Transacreana">
                                 <span class="ml-2 text-gray-700">Implementar Escola Centralizada no Projeto Moreno Maia e Transacreana</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo5" value="Implementar internet via satélite, prioritariamente nas escolas rurais.">
                                 <span class="ml-2 text-gray-700">Implementar internet via satélite, prioritariamente nas escolas rurais.</span>
                             </label>
                         </div>
@@ -895,63 +1028,63 @@
                     <div class="collapsible-content overflow-hidden transition-all duration-500">
                         <div class="grid grid-cols-1 gap-4 mt-4 px-2">
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Expansão de unidades de saúde">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Apoiar projetos culturais municipais">
                                 <span class="ml-2 text-gray-700">Apoiar projetos de paradesporto municipal</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Construção de novas escolas">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Implantar equipamentos esportivos em áreas socialmente vulneráveis">
                                 <span class="ml-2 text-gray-700">Implantar equipamentos esportivos em áreas socialmente vulneráveis</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Programas de esporte e lazer">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Modernizar a infraestrutura dos espaços esportivos municipais">
                                 <span class="ml-2 text-gray-700">Modernizar a infraestrutura dos espaços esportivos municipais</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Instituir e integrar o calendário anual dos eventos esportivos municipais, com divulgação e atualização periódica">
                                 <span class="ml-2 text-gray-700">Instituir e integrar o calendário anual dos eventos esportivos municipais, com divulgação e atualização periódica</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Implantar o Programa Bolsa Atleta">
                                 <span class="ml-2 text-gray-700">Implantar o Programa Bolsa Atleta</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Modernizar a infraestrutura de apoio às atividades de cultura, esporte e lazer">
                                 <span class="ml-2 text-gray-700">Modernizar a infraestrutura de apoio às atividades de cultura, esporte e lazer</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Integrar ações e eventos de cultura, esporte e lazer">
                                 <span class="ml-2 text-gray-700">Integrar ações e eventos de cultura, esporte e lazer</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Realizar campeonatos esportivos nas regionais">
                                 <span class="ml-2 text-gray-700">Realizar campeonatos esportivos nas regionais</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Promover ações de valorização e reconhecimento de atletas municipais.">
                                 <span class="ml-2 text-gray-700">Promover ações de valorização e reconhecimento de atletas municipais.</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Promover cooperação e parcerias interinstitucionais para fortalecer entidades e ampliar o acesso da população a estruturas e serviços esportivos">
                                 <span class="ml-2 text-gray-700">Promover cooperação e parcerias interinstitucionais para fortalecer entidades e ampliar o acesso da população a estruturas e serviços esportivos</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Promover eventos culturais comunitários e temáticos em diferentes territórios do município">
                                 <span class="ml-2 text-gray-700">Promover eventos culturais comunitários e temáticos em diferentes territórios do município</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Implantar memoriais de história, arte e cultura">
                                 <span class="ml-2 text-gray-700">Implantar memoriais de história, arte e cultura</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Promover oficinas e seminários de valorização e preservação do patrimônio histórico, artístico e cultural">
                                 <span class="ml-2 text-gray-700">Promover oficinas e seminários de valorização e preservação do patrimônio histórico, artístico e cultural</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Apoiar a profissionalização dos fazedores de cultura">
                                 <span class="ml-2 text-gray-700">Apoiar a profissionalização dos fazedores de cultura</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo6" value="Promover atividades artísticas e formativas voltadas à cultura local">
                                 <span class="ml-2 text-gray-700">Promover atividades artísticas e formativas voltadas à cultura local</span>
                             </label>
                         </div>
@@ -968,127 +1101,127 @@
                     <div class="collapsible-content overflow-hidden transition-all duration-500">
                         <div class="grid grid-cols-1 gap-4 mt-4 px-2">
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Expansão de unidades de saúde">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Implementar a Política Municipal sobre Mudanças Climáticas">
                                 <span class="ml-2 text-gray-700">Implementar a Política Municipal sobre Mudanças Climáticas</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Construção de novas escolas">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Fortalecer o Conselho Municipal de Meio Ambiente – COMDEMA">
                                 <span class="ml-2 text-gray-700">Fortalecer o Conselho Municipal de Meio Ambiente – COMDEMA</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Programas de esporte e lazer">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Regulamentar o Plano Municipal de Mitigação e Adaptação de Mudanças Climáticas">
                                 <span class="ml-2 text-gray-700">Regulamentar o Plano Municipal de Mitigação e Adaptação de Mudanças Climáticas</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Elaborar o Plano Municipal de Arborização">
                                 <span class="ml-2 text-gray-700">Elaborar o Plano Municipal de Arborização</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Modernizar o Viveiro Municipal com mudas ornamentais">
                                 <span class="ml-2 text-gray-700">Modernizar o Viveiro Municipal com mudas ornamentais</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Promover a Educação Ambiental no Município de Rio Branco">
                                 <span class="ml-2 text-gray-700">Promover a Educação Ambiental no Município de Rio Branco</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Ampliar o potencial das ações de Controle Ambiental no Município de Rio Branco">
                                 <span class="ml-2 text-gray-700">Ampliar o potencial das ações de Controle Ambiental no Município de Rio Branco</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Implantar sistema de gerenciamento das ações de gestão e controle ambiental.">
                                 <span class="ml-2 text-gray-700">Implantar sistema de gerenciamento das ações de gestão e controle ambiental.</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Implementar Programa de Conversão de Multas Ambientais em pena alternativa para preservação, melhoria e recuperação da qualidade do meio ambiente">
                                 <span class="ml-2 text-gray-700">Implementar Programa de Conversão de Multas Ambientais em pena alternativa para preservação, melhoria e recuperação da qualidade do meio ambiente</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Revisar e implementar a Política Municipal de Resíduos Sólidos Urbanos">
                                 <span class="ml-2 text-gray-700">Revisar e implementar a Política Municipal de Resíduos Sólidos Urbanos</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Modernizar a Unidade de Tratamento e Disposição Final de Resíduos Sólidos de Rio Branco">
                                 <span class="ml-2 text-gray-700">Modernizar a Unidade de Tratamento e Disposição Final de Resíduos Sólidos de Rio Branco </span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Implementar a Política Municipal de Bem-estar animal">
                                 <span class="ml-2 text-gray-700">Implementar a Política Municipal de Bem-estar animal</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Instituir Núcleo de Bem-estar animal na estrutura da SEMEIA">
                                 <span class="ml-2 text-gray-700">Instituir Núcleo de Bem-estar animal na estrutura da SEMEIA</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Manter o Viveiro Municipal">
                                 <span class="ml-2 text-gray-700">Manter o Viveiro Municipal</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Implantar Programa de identificação e proteção de nascentes de Rio Branco">
                                 <span class="ml-2 text-gray-700">Implantar Programa de identificação e proteção de nascentes de Rio Branco</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Implantar o Parque amigo da criança com brinquedos inclusivos no Horto Florestal, PACM e Parque São Francisco">
                                 <span class="ml-2 text-gray-700">Implantar o Parque amigo da criança com brinquedos inclusivos no Horto Florestal, PACM e Parque São Francisco</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Modernizar os Parques Horto Florestal, São Francisco e Parque Chico Mendes">
                                 <span class="ml-2 text-gray-700">Modernizar os Parques Horto Florestal, São Francisco e Parque Chico Mendes</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo2" value="Arborização de vias públicas, parques, praças e áreas verdes">
                                 <span class="ml-2 text-gray-700">Arborização de vias públicas, parques, praças e áreas verdes</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Manutenção do Parque Municipal Chico Mendes">
                                 <span class="ml-2 text-gray-700">Manutenção do Parque Municipal Chico Mendes</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Realizar a coleta e o transporte de resíduos domiciliares">
                                 <span class="ml-2 text-gray-700">Realizar a coleta e o transporte de resíduos domiciliares</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Implantar central de triagem de resíduos de limpeza urbana (inertes)">
                                 <span class="ml-2 text-gray-700">Implantar central de triagem de resíduos de limpeza urbana (inertes)</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Operar a coleta seletiva e destinar materiais recicláveis">
                                 <span class="ml-2 text-gray-700">Operar a coleta seletiva e destinar materiais recicláveis</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Executar a limpeza urbana de vias e logradouros">
                                 <span class="ml-2 text-gray-700">Executar a limpeza urbana de vias e logradouros</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Executar a limpeza e o desassoreamento de córregos na zona urbana">
                                 <span class="ml-2 text-gray-700">Executar a limpeza e o desassoreamento de córregos na zona urbana</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Manter praças e parques de esporte e lazer">
                                 <span class="ml-2 text-gray-700">Manter praças e parques de esporte e lazer</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Realizar a regularização ambiental dos cemiterios.">
                                 <span class="ml-2 text-gray-700">Realizar a regularização ambiental dos cemiterios.</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Executar muros perimetrais nos cemitérios públicos">
                                 <span class="ml-2 text-gray-700">Executar muros perimetrais nos cemitérios públicos</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Área de parque urbano requalificada">
                                 <span class="ml-2 text-gray-700">Área de parque urbano requalificada</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Substituir luminárias da iluminação pública em vias públicas">
                                 <span class="ml-2 text-gray-700">Substituir luminárias da iluminação pública em vias públicas</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Manter a iluminação pública em vias públicas">
                                 <span class="ml-2 text-gray-700">Manter a iluminação pública em vias públicas</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo7" value="Implantar luminárias LED com telegestão">
                                 <span class="ml-2 text-gray-700">Implantar luminárias LED com telegestão</span>
                             </label>
                         </div>
@@ -1105,71 +1238,71 @@
                     <div class="collapsible-content overflow-hidden transition-all duration-500">
                         <div class="grid grid-cols-1 gap-4 mt-4 px-2">
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Expansão de unidades de saúde">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Garantir serviços especializados de atendimento a famílias e indivíduos em situação de risco pessoal e social">
                                 <span class="ml-2 text-gray-700">Garantir serviços especializados de atendimento a famílias e indivíduos em situação de risco pessoal e social</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Construção de novas escolas">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Ofertar acolhimento institucional para indivíduos e famílias sem referência ou em situação de risco social e pessoal">
                                 <span class="ml-2 text-gray-700">Ofertar acolhimento institucional para indivíduos e famílias sem referência ou em situação de risco social e pessoal</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Programas de esporte e lazer">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Garantir estruturação, gestão e funcionamento das unidades, conselhos e fundos da assistência social no município">
                                 <span class="ml-2 text-gray-700">Garantir estruturação, gestão e funcionamento das unidades, conselhos e fundos da assistência social no município</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Apoiar a gestão de benefícios continuados e transferências de renda em articulação com a rede de serviços socioassistenciais.">
                                 <span class="ml-2 text-gray-700">Apoiar a gestão de benefícios continuados e transferências de renda em articulação com a rede de serviços socioassistenciais.</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Apoiar famílias em vulnerabilidade na busca de autonomia econômica e inclusão no mercado de trabalho">
                                 <span class="ml-2 text-gray-700">Apoiar famílias em vulnerabilidade na busca de autonomia econômica e inclusão no mercado de trabalho</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Promover ações específicas de atenção e defesa de direitos para populações vulneráveis">
                                 <span class="ml-2 text-gray-700">Promover ações específicas de atenção e defesa de direitos para populações vulneráveis</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Promover a Gestão, Vigilância Socioassistencial e Participação Social">
                                 <span class="ml-2 text-gray-700">Promover a Gestão, Vigilância Socioassistencial e Participação Social</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Ampliar o Acesso à Segurança Alimentar e Nutricional">
                                 <span class="ml-2 text-gray-700">Ampliar o Acesso à Segurança Alimentar e Nutricional</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Fortalecer entidades socioassistenciais e apoiar tecnicamente os serviços de acolhimento para crianças de 0 a 12 anos incompletos">
                                 <span class="ml-2 text-gray-700">Fortalecer entidades socioassistenciais e apoiar tecnicamente os serviços de acolhimento para crianças de 0 a 12 anos incompletos</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Fortalecer as ações estratégicas do Programa de Erradicação do Trabalho Infantil – AEPETI">
                                 <span class="ml-2 text-gray-700">Fortalecer as ações estratégicas do Programa de Erradicação do Trabalho Infantil – AEPETI</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Fortalecer e Ampliar o programa 'SASDH na comunidade'">
                                 <span class="ml-2 text-gray-700">Fortalecer e Ampliar o programa "SASDH na comunidade"</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Promover e fortalecer políticas públicas de Direitos Humanos e Políticas Afirmativas">
                                 <span class="ml-2 text-gray-700">Promover e fortalecer políticas públicas de Direitos Humanos e Políticas Afirmativas</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Fomentar a inclusão produtiva e o emprego decente com foco em públicos vulneráveis.">
                                 <span class="ml-2 text-gray-700">Fomentar a inclusão produtiva e o emprego decente com foco em públicos vulneráveis.</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Promover campanhas de prevenção e conscientização dos direitos da mulher e enfrentamento da violência doméstica">
                                 <span class="ml-2 text-gray-700">Promover campanhas de prevenção e conscientização dos direitos da mulher e enfrentamento da violência doméstica</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Ampliar a oferta de atendimento psicossocial e jurídico para mulheres vítimas de violência">
                                 <span class="ml-2 text-gray-700">Ampliar a oferta de atendimento psicossocial e jurídico para mulheres vítimas de violência</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Promover capacitação profissional e incentivo ao empreendedorismo feminino">
                                 <span class="ml-2 text-gray-700">Promover capacitação profissional e incentivo ao empreendedorismo feminino</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo8" value="Fomentar a inserção de mulheres no mercado de trabalho formal e informal">
                                 <span class="ml-2 text-gray-700">Fomentar a inserção de mulheres no mercado de trabalho formal e informal</span>
                             </label>
                         </div>
@@ -1186,227 +1319,227 @@
                     <div class="collapsible-content overflow-hidden transition-all duration-500">
                         <div class="grid grid-cols-1 gap-4 mt-4 px-2">
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Expansão de unidades de saúde">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de servidores públicos">
                                 <span class="ml-2 text-gray-700">Capacitação de servidores públicos</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Construção de novas escolas">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Digitalizar e virtualizar o acervo documental do município">
                                 <span class="ml-2 text-gray-700">Digitalizar e virtualizar o acervo documental do município</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Programas de esporte e lazer">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Centralizar os processos de compras públicas">
                                 <span class="ml-2 text-gray-700">Centralizar os processos de compras públicas</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Unificar o lançamento e o processamento da folha de pagamento na SMGA">
                                 <span class="ml-2 text-gray-700">Unificar o lançamento e o processamento da folha de pagamento na SMGA</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção da Câmara Municipal de Rio Branco">
                                 <span class="ml-2 text-gray-700">Manutenção da Câmara Municipal de Rio Branco</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção da Secretaria Municipal de Saúde">
                                 <span class="ml-2 text-gray-700">Manutenção da Secretaria Municipal de Saúde</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção da Secretaria Municipal de Meio Ambiente">
                                 <span class="ml-2 text-gray-700">Manutenção da Secretaria Municipal de Meio Ambiente</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção da Secretaria Municipal de Assistência Social e Direitos Humanos">
                                 <span class="ml-2 text-gray-700">Manutenção da Secretaria Municipal de Assistência Social e Direitos Humanos </span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção da Secretaria Municipal de Educação">
                                 <span class="ml-2 text-gray-700">Manutenção da Secretaria Municipal de Educação</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção da Superintendência Municipal de Transportes e Trânsito">
                                 <span class="ml-2 text-gray-700">Manutenção da Superintendência Municipal de Transportes e Trânsito</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção da Secretaria Municipal de Cuidados com a Cidade">
                                 <span class="ml-2 text-gray-700">Manutenção da Secretaria Municipal de Cuidados com a Cidade</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção da Secretaria Municipal da Casa Civil">
                                 <span class="ml-2 text-gray-700">Manutenção da Secretaria Municipal da Casa Civil</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção da Secretaria Municipal de Finanças">
                                 <span class="ml-2 text-gray-700">Manutenção da Secretaria Municipal de Finanças</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção da Secretaria Especial de Comunicação">
                                 <span class="ml-2 text-gray-700">Manutenção da Secretaria Especial de Comunicação</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção da Procuradoria Geral do Município">
                                 <span class="ml-2 text-gray-700">Manutenção da Procuradoria Geral do Município</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção da Fundação Municipal de Cultura, Esporte e Lazer Garibaldi Brasil">
                                 <span class="ml-2 text-gray-700">Manutenção da Fundação Municipal de Cultura, Esporte e Lazer Garibaldi Brasil</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção da Secretaria Municipal de Planejamento">
                                 <span class="ml-2 text-gray-700">Manutenção da Secretaria Municipal de Planejamento</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção da Controladoria Geral do Município">
                                 <span class="ml-2 text-gray-700">Manutenção da Controladoria Geral do Município</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção do Serviço de Água e Esgoto de Rio Branco">
                                 <span class="ml-2 text-gray-700">Manutenção do Serviço de Água e Esgoto de Rio Branco</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção da Empresa Municipal de Urbanização de Rio Branco">
                                 <span class="ml-2 text-gray-700">Manutenção da Empresa Municipal de Urbanização de Rio Branco</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção da Coordenadoria Municipal de Defesa Civil">
                                 <span class="ml-2 text-gray-700">Manutenção da Coordenadoria Municipal de Defesa Civil</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção da Secretaria Municipal de Gestão Administrativa">
                                 <span class="ml-2 text-gray-700">Manutenção da Secretaria Municipal de Gestão Administrativa</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção da Secretaria Municipal de Infraestrutura e Mobilidade Urbana">
                                 <span class="ml-2 text-gray-700">Manutenção da Secretaria Municipal de Infraestrutura e Mobilidade Urbana</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção da Secretaria Municipal de Agropecuária">
                                 <span class="ml-2 text-gray-700">Manutenção da Secretaria Municipal de Agropecuária</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção do Gabinete Militar">
                                 <span class="ml-2 text-gray-700">Manutenção do Gabinete Militar</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção do Instituto de Previdência do Municipio de Rio Branco">
                                 <span class="ml-2 text-gray-700">Manutenção do Instituto de Previdência do Municipio de Rio Branco</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção do Gabinete do Prefeito">
                                 <span class="ml-2 text-gray-700">Manutenção do Gabinete do Prefeito</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção da Diretoria de Tecnologia">
                                 <span class="ml-2 text-gray-700">Manutenção da Diretoria de Tecnologia</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção do Gabinete do Vice-Prefeito">
                                 <span class="ml-2 text-gray-700">Manutenção do Gabinete do Vice-Prefeito</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção da Ouvidoria Geral do Município">
                                 <span class="ml-2 text-gray-700">Manutenção da Ouvidoria Geral do Município</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção da Corregedoria Geral do Município - COGEM">
                                 <span class="ml-2 text-gray-700">Manutenção da Corregedoria Geral do Município - COGEM</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção da Secretaria Municipal de Desenvolvimento Econômico, Turismo, Tecnologia e Inovação">
                                 <span class="ml-2 text-gray-700">Manutenção da Secretaria Municipal de Desenvolvimento Econômico, Turismo, Tecnologia e Inovação</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção da Secretaria Municipal de Esportes">
                                 <span class="ml-2 text-gray-700">Manutenção da Secretaria Municipal de Esportes</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção do Fundo Municipal de Segurança Pública e Defesa Social">
                                 <span class="ml-2 text-gray-700">Manutenção do Fundo Municipal de Segurança Pública e Defesa Social</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção da Secretaria Especial de Assuntos Jurídicos e Atos Oficiais">
                                 <span class="ml-2 text-gray-700">Manutenção da Secretaria Especial de Assuntos Jurídicos e Atos Oficiais</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção da Secretaria Especial de Articulação Institucional">
                                 <span class="ml-2 text-gray-700">Manutenção da Secretaria Especial de Articulação Institucional</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção do Fundo Municipal de Saneamento">
                                 <span class="ml-2 text-gray-700">Manutenção do Fundo Municipal de Saneamento</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Manutenção do Fundo Municipal de Turismo">
                                 <span class="ml-2 text-gray-700">Manutenção do Fundo Municipal de Turismo</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Monitoramento das áreas de risco hidrológico e geológico">
                                 <span class="ml-2 text-gray-700">Monitoramento das áreas de risco hidrológico e geológico</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Criar Núcleos Comunitários de Proteção e Defesa Civil - Nupdec’s">
                                 <span class="ml-2 text-gray-700">Criar Núcleos Comunitários de Proteção e Defesa Civil - Nupdec’s</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Defesa Civil nas Escolas">
                                 <span class="ml-2 text-gray-700">Defesa Civil nas Escolas</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Implantar número de emergência 199">
                                 <span class="ml-2 text-gray-700">Implantar número de emergência 199</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Implantar centro integrado de monitoramento climático, estatístico e de alerta a desastres naturais de grande impacto">
                                 <span class="ml-2 text-gray-700">Implantar centro integrado de monitoramento climático, estatístico e de alerta a desastres naturais de grande impacto</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Instituir e operacionalizar o Conselho Municipal de Redução de Desastres, promovendo a articulação entre governo e sociedade na gestão de riscos">
                                 <span class="ml-2 text-gray-700">Instituir e operacionalizar o Conselho Municipal de Redução de Desastres, promovendo a articulação entre governo e sociedade na gestão de riscos</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Implementar processos intersetoriais de gestão de riscos de desastres e emergências de saúde com foco na prevenção e redução de riscos, resposta, reabilitação, recuperação e reconstrução.">
                                 <span class="ml-2 text-gray-700">Implementar processos intersetoriais de gestão de riscos de desastres e emergências de saúde com foco na prevenção e redução de riscos, resposta, reabilitação, recuperação e reconstrução.</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Atualização dos planos de contingência">
                                 <span class="ml-2 text-gray-700">Atualização dos planos de contingência</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Ampliar o Sistema de Videomonitoramento de Segurança Pública em Regionais Prioritárias">
                                 <span class="ml-2 text-gray-700">Ampliar o Sistema de Videomonitoramento de Segurança Pública em Regionais Prioritárias</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Implantar o Centro Integrado de Comando e Controle Municipal">
                                 <span class="ml-2 text-gray-700">Implantar o Centro Integrado de Comando e Controle Municipal</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Gestão e acompanhamento das demandas da sociedade">
                                 <span class="ml-2 text-gray-700">Gestão e acompanhamento das demandas da sociedade</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Apoiar o funcionamento dos Conselhos Tutelares">
                                 <span class="ml-2 text-gray-700">Apoiar o funcionamento dos Conselhos Tutelares</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Implantar o Novo Portal de Transparência Municipal">
                                 <span class="ml-2 text-gray-700">Implantar o Novo Portal de Transparência Municipal</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Implantar o Diário Oficial Eletrônico do Município de Rio Branco">
                                 <span class="ml-2 text-gray-700">Implantar o Diário Oficial Eletrônico do Município de Rio Branco</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Consolidar a implantação do Portal de Leis do Município de Rio Branco">
                                 <span class="ml-2 text-gray-700">Consolidar a implantação do Portal de Leis do Município de Rio Branco</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Revisar e consolidar a legislação municipal de regularização fundiária e titulação definitiva de imóveis">
                                 <span class="ml-2 text-gray-700">Revisar e consolidar a legislação municipal de regularização fundiária e titulação definitiva de imóveis</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Atualizar e modernizar o Código Tributário Municipal">
                                 <span class="ml-2 text-gray-700">Atualizar e modernizar o Código Tributário Municipal</span>
                             </label>
                             <label class="checkbox-label flex items-center">
-                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Capacitação de professores">
+                                <input type="checkbox" class="form-checkbox text-blue-600" name="eixo9" value="Atualizar a Planta Genérica de Valores do Município">
                                 <span class="ml-2 text-gray-700">Atualizar a Planta Genérica de Valores do Município</span>
                             </label>
                         </div>
@@ -1415,7 +1548,7 @@
                 </div>
 
                 <div class="flex justify-between gap-4 mt-8">
-                    <button type="button" id="back3" class="w-1/2 bg-gray-400 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-500 transition-colors duration-300">
+                    <button type="button" id="back4" class="w-1/2 bg-gray-400 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-500 transition-colors duration-300">
                         Voltar
                     </button>
                     <button type="submit" id="submit-button" class="w-1/2 bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300">
@@ -1597,13 +1730,25 @@
     const phase1 = document.getElementById('phase1');
     const phase2 = document.getElementById('phase2');
     const phase3 = document.getElementById('phase3');
+    const phase4 = document.getElementById('phase4');
     const next1Btn = document.getElementById('next1');
     const next2Btn = document.getElementById('next2');
+    const next3Btn = document.getElementById('next3');
     const back2Btn = document.getElementById('back2');
     const back3Btn = document.getElementById('back3');
+    const back4Btn = document.getElementById('back4');
     const rioBrancoRadio = document.getElementsByName('rio-branco');
+    const rioBrancoNaoRadio = document.getElementsByName('rio-branco-nao');
     const bairroField = document.getElementById('bairro-field');
+    const bairroNaoField = document.getElementById('bairro-nao-field');
+    const bairroSelect = document.getElementById('bairro');
+    const bairroNaoSelect = document.getElementById('bairro-nao');
     const submitBtn = document.getElementById('submit-button');
+
+    if (bairroSelect && bairroNaoSelect) {
+        bairroNaoSelect.innerHTML = bairroSelect.innerHTML;
+    }
+
     submitBtn.disabled = true; // desabilita até autenticar
     const multiPhaseForm = document.getElementById('multi-phase-form');
     const statusMessage = document.getElementById('status-message');
@@ -1627,6 +1772,9 @@
             formTitle.textContent = 'Dados Opcionais';
         } else if (phaseNumber === 3) {
             phase3.classList.remove('hidden');
+            formTitle.textContent = 'Sua Localização';
+        } else if (phaseNumber === 4) {
+            phase4.classList.remove('hidden');
             formTitle.textContent = 'Eixos Temáticos';
         }
     }
@@ -1651,6 +1799,15 @@
             document.getElementById('sexo').removeAttribute('required');
             document.getElementById('escolaridade').removeAttribute('required');
             document.getElementById('faixa-etaria').removeAttribute('required');
+            if (rioBrancoNaoRadio.length > 0) {
+                rioBrancoNaoRadio[0].checked = true;
+            }
+            if (bairroNaoSelect) {
+                bairroNaoSelect.value = '';
+            }
+            if (bairroNaoField) {
+                bairroNaoField.classList.remove('hidden');
+            }
         }
     });
 
@@ -1671,24 +1828,73 @@
     }
 
     previousPhase = 2;
-    showPhase(3);
+    showPhase(4);
 });
+
+    next3Btn.addEventListener('click', () => {
+        const rioBrancoNaoSelecionado = document.querySelector('input[name="rio-branco-nao"]:checked');
+        if (!rioBrancoNaoSelecionado) {
+            openModal();
+            return;
+        }
+
+        const moraRioBrancoAnon = rioBrancoNaoSelecionado.value === 'sim';
+        const bairroAnon = bairroNaoSelect ? bairroNaoSelect.value : '';
+
+        if (moraRioBrancoAnon && !bairroAnon) {
+            openModal();
+            return;
+        }
+
+        previousPhase = 3;
+        showPhase(4);
+    });
 
     back2Btn.addEventListener('click', () => {
         showPhase(1);
     });
     
     back3Btn.addEventListener('click', () => {
+        showPhase(1);
+    });
+
+    back4Btn.addEventListener('click', () => {
         showPhase(previousPhase);
     });
     
     // Logic for "Você é de Rio Branco?" question
     rioBrancoRadio.forEach(radio => {
-        radio.addEventListener('change', () => {
-            isRioBranco = (radio.value === 'sim');
-            bairroField.classList.toggle('hidden', !isRioBranco);
+        radio.addEventListener('change', (event) => {
+            if (!event.target.checked) return;
+            isRioBranco = (event.target.value === 'sim');
+            if (bairroField) {
+                bairroField.classList.toggle('hidden', !isRioBranco);
+            }
         });
     });
+
+    rioBrancoNaoRadio.forEach(radio => {
+        radio.addEventListener('change', (event) => {
+            if (!event.target.checked) return;
+            const moraEmRioBranco = (event.target.value === 'sim');
+            if (bairroNaoField) {
+                bairroNaoField.classList.toggle('hidden', !moraEmRioBranco);
+            }
+            if (!moraEmRioBranco && bairroNaoSelect) {
+                bairroNaoSelect.value = '';
+            }
+        });
+    });
+
+    const rioBrancoInicial = document.querySelector('input[name="rio-branco"]:checked');
+    if (rioBrancoInicial && bairroField) {
+        bairroField.classList.toggle('hidden', rioBrancoInicial.value !== 'sim');
+    }
+
+    const rioBrancoNaoInicial = document.querySelector('input[name="rio-branco-nao"]:checked');
+    if (rioBrancoNaoInicial && bairroNaoField) {
+        bairroNaoField.classList.toggle('hidden', rioBrancoNaoInicial.value !== 'sim');
+    }
 
     // Logic for collapsible axes
     collapsibleHeaders.forEach(header => {
@@ -1731,51 +1937,73 @@
             return;
         }
 
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Enviando...';
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Enviando...';
         statusMessage.classList.add('hidden');
 
-    // Coleta de dados pessoais
-    let personalInfo = {
-        identificado: identified ? "sim" : "nao"
-    };
+    // Coleta de dados pessoais e localização
+    let personalDetails = null;
+    const locationInfo = {};
 
     if (identified) {
         isRioBranco = document.querySelector('input[name="rio-branco"]:checked').value === 'sim';
-        personalInfo = {
-            ...personalInfo,
+        personalDetails = {
             nome: document.getElementById('name').value,
             sexo: document.getElementById('sexo').value,
             escolaridade: document.getElementById('escolaridade').value,
             faixaEtaria: document.getElementById('faixa-etaria').value,
-            moraRioBranco: isRioBranco,
         };
+
+        locationInfo.moraRioBranco = isRioBranco;
         if (isRioBranco) {
-            personalInfo.bairro = document.getElementById('bairro').value;
+            locationInfo.bairro = document.getElementById('bairro').value;
+        }
+    } else {
+        const rioBrancoNaoSelecionado = document.querySelector('input[name="rio-branco-nao"]:checked');
+        const moraRioBrancoAnon = rioBrancoNaoSelecionado ? rioBrancoNaoSelecionado.value === 'sim' : false;
+
+        locationInfo.moraRioBranco = moraRioBrancoAnon;
+        if (moraRioBrancoAnon && bairroNaoSelect) {
+            locationInfo.bairro = bairroNaoSelect.value;
         }
     }
 
         // Collect votes
         const votes = {};
-        const eixo1Votes = Array.from(document.querySelectorAll('input[name="eixo1"]:checked')).map(cb => cb.value);
-        const eixo2Votes = Array.from(document.querySelectorAll('input[name="eixo2"]:checked')).map(cb => cb.value);
-        
-        if (eixo1Votes.length > 0) votes.eixo1 = eixo1Votes;
-        if (eixo2Votes.length > 0) votes.eixo2 = eixo2Votes;
+        const axisNames = new Set();
+
+        document.querySelectorAll('.form-checkbox').forEach((checkbox) => {
+            if (checkbox.name) {
+                axisNames.add(checkbox.name);
+            }
+        });
+
+        axisNames.forEach((axis) => {
+            const selections = Array.from(document.querySelectorAll(`input[name="${axis}"]:checked`)).map(cb => cb.value);
+            if (selections.length > 0) {
+                votes[axis] = selections;
+            }
+        });
 
         // Cria objeto final
         const finalData = {
             userId: userId,
             timestamp: Timestamp.now(),
             identificado: identified ? "sim" : "nao",
-            votes: votes,
-            ...personalInfo // se não identificado, só vai { identificado: "nao" }
+            dadosPessoais: personalDetails,
+            localizacao: locationInfo,
+            votes: votes
         };
 
 
         try {
             const suggestionsCollectionRef = collection(db, `artifacts/${appId}/public/data/suggestions`);
-            await addDoc(suggestionsCollectionRef, finalData);
+            const docRef = await addDoc(suggestionsCollectionRef, finalData);
+
+            console.log('✅ Voto registrado com sucesso:', docRef.id, finalData);
+            statusMessage.textContent = 'Sua votação foi registrada com sucesso!';
+            statusMessage.classList.remove('hidden', 'text-red-500');
+            statusMessage.classList.add('text-green-500');
 
             multiPhaseForm.classList.add('hidden');
             finalMessage.classList.remove('hidden');
@@ -1799,7 +2027,7 @@
         if (navItens.classList.contains('show')) {
             navItens.classList.remove('show');
         } else {
-            navItens.classList.add('show');s
+            navItens.classList.add('show');
         }
     }
 
